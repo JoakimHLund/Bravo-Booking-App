@@ -140,9 +140,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ADALForForms\ADALForForms\ADALForForms.csproj">
+    <ProjectReference Include="..\ADALForForms\ADALForForms\Bravo Booking.csproj">
       <Project>{9df2bbbc-50ad-42b5-ac74-480b7aa72294}</Project>
-      <Name>ADALForForms</Name>
+      <Name>Bravo Booking</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">

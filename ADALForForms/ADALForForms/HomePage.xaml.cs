@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
 using Xamarin.Forms;
 
-namespace ADALForForms
+namespace BravoBooking
 {
     public partial class HomePage : ContentPage
     {

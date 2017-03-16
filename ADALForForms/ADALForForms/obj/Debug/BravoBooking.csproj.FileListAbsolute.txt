@@ -1,0 +1,8 @@
+C:\Users\Joakim\Desktop\O365Unified-master\ADALForForms\ADALForForms\obj\Debug\BravoBooking.csproj.App.config
+C:\Users\Joakim\Desktop\O365Unified-master\ADALForForms\ADALForForms\obj\Debug\ADALForForms.HomePage.xaml.g.cs
+C:\Users\Joakim\Desktop\O365Unified-master\ADALForForms\ADALForForms\obj\Debug\ADALForForms.MePage.xaml.g.cs
+C:\Users\Joakim\Desktop\O365Unified-master\ADALForForms\ADALForForms\obj\Debug\ADALForForms.FilesPage.xaml.g.cs
+C:\Users\Joakim\Desktop\O365Unified-master\ADALForForms\ADALForForms\obj\Debug\ADALForForms.dll
+C:\Users\Joakim\Desktop\O365Unified-master\ADALForForms\ADALForForms\obj\Debug\ADALForForms.pdb
+C:\Users\Joakim\Desktop\O365Unified-master\ADALForForms\ADALForForms\obj\Debug\ADALForForms.dll.mdb
+C:\Users\Joakim\Desktop\O365Unified-master\ADALForForms\ADALForForms\bin\Debug\ADALForForms.dll.mdb

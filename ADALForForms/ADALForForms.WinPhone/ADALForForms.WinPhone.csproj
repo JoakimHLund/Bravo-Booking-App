@@ -160,8 +160,9 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ADALForForms\ADALForForms.csproj">
-      <Name>ADALForForms</Name>
+    <ProjectReference Include="..\ADALForForms\Bravo Booking.csproj">
+      <Name>Bravo Booking</Name>
+      <Project>{9DF2BBBC-50AD-42B5-AC74-480B7AA72294}</Project>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
