@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ADALForForms {
+namespace BravoBooking {
     using System;
     using Xamarin.Forms;
     using Xamarin.Forms.Xaml;

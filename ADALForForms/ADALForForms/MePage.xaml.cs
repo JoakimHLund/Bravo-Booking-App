@@ -8,7 +8,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Xamarin.Forms;
 
-namespace ADALForForms
+namespace BravoBooking
 {
 	public partial class MePage : ContentPage
 	{

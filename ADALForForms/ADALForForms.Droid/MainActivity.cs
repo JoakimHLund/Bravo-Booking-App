@@ -9,7 +9,7 @@ using Android.Widget;
 using Android.OS;
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
 
-namespace ADALForForms.Droid
+namespace BravoBooking.Droid
 {
     [Activity(Label = "ADALForForms", Icon = "@drawable/icon", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsApplicationActivity

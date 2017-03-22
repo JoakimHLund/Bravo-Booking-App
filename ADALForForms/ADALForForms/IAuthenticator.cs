@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
 
-namespace ADALForForms
+namespace BravoBooking
 {
     public interface IAuthenticator
     {

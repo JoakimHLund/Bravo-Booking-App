@@ -12,8 +12,8 @@ using Android.Widget;
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
 using Xamarin.Forms;
 
-[assembly: Dependency(typeof(ADALForForms.Droid.Helper.Authenticator))]
-namespace ADALForForms.Droid.Helper
+[assembly: Dependency(typeof(BravoBooking.Droid.Helper.Authenticator))]
+namespace BravoBooking.Droid.Helper
 {
     class Authenticator : IAuthenticator
     {

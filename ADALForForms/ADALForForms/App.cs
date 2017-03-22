@@ -5,7 +5,7 @@ using System.Text;
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
 using Xamarin.Forms;
 
-namespace ADALForForms
+namespace BravoBooking
 {
     public class App : Application
     {
