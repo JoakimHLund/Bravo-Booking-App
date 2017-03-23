@@ -106,7 +106,7 @@
     <Content Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ADALForForms\BravoBooking.csproj">
+    <ProjectReference Include="..\BravoBooking\BravoBooking.csproj">
       <Name>BravoBooking</Name>
       <Project>{9DF2BBBC-50AD-42B5-AC74-480B7AA72294}</Project>
     </ProjectReference>
