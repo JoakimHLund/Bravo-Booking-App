@@ -58,3 +58,5 @@ C:\Users\Joakim\Desktop\O365Unified-master\ADALForForms\ADALForForms\bin\Debug\z
 C:\Users\Joakim\Desktop\O365Unified-master\ADALForForms\ADALForForms\obj\Debug\BravoBooking.csprojResolveAssemblyReference.cache
 C:\Users\Joakim\Desktop\O365Unified-master\ADALForForms\ADALForForms\obj\Debug\ADALForForms.dll.mdb
 C:\Users\Joakim\Desktop\O365Unified-master\ADALForForms\ADALForForms\bin\Debug\ADALForForms.dll.mdb
+c:\users\synne\source\repos\bravo-booking-app\bravobooking\bravobooking\obj\Debug\ADALForForms.dll.mdb
+c:\users\synne\source\repos\bravo-booking-app\bravobooking\bravobooking\bin\Debug\ADALForForms.dll.mdb
