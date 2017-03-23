@@ -30,7 +30,7 @@ namespace BravoBooking
             var userName = App.AuthenticationResult.UserInfo.GivenName + " " 
                 + App.AuthenticationResult.UserInfo.FamilyName;
             await DisplayAlert("Token", userName, "Ok", "Cancel");
-            var tabbedPage = new TabbedPage() { Title = "O365 Sample"};
+            var tabbedPage = new TabbedPage() { Title = "Bravo Booking"};
             tabbedPage.Children.Add(new MePage() {Title = "About Me"});
             tabbedPage.Children.Add(new FilesPage() {Title = "My Files"});
             await Navigation.PushAsync(tabbedPage);

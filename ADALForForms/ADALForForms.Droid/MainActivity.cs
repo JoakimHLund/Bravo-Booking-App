@@ -11,7 +11,7 @@ using Microsoft.IdentityModel.Clients.ActiveDirectory;
 
 namespace BravoBooking.Droid
 {
-    [Activity(Label = "ADALForForms", Icon = "@drawable/icon", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    [Activity(Label = "Bravo Booking", Icon = "@drawable/icon", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsApplicationActivity
     {
         protected override void OnActivityResult(int requestCode, Result resultCode, Intent data)
