@@ -57,7 +57,7 @@ namespace ADALForForms.Model
     }
     public partial class RomModel
     {
-        public class Value2
+        public class value2
         {
             [JsonProperty("@odata.context")]
             public string OdataContext { get; set; }
@@ -182,7 +182,7 @@ namespace ADALForForms.Model
         public string OdataContext { get; set; }
 
         [JsonProperty("value")]
-        public Value2[] Value { get; set; }
+        public value2[] value { get; set; }
     }
 }
 
