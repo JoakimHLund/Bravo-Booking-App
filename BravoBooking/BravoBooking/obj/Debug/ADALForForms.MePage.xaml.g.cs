@@ -26,11 +26,15 @@ namespace BravoBooking {
         private Label Country;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private Label UserName;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(MePage));
             DisplayName = this.FindByName<Label>("DisplayName");
             Mail = this.FindByName<Label>("Mail");
             Country = this.FindByName<Label>("Country");
+            UserName = this.FindByName<Label>("UserName");
         }
     }
 }
