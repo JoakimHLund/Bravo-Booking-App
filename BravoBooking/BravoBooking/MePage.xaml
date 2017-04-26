@@ -3,6 +3,7 @@
 	<StackLayout Padding="20" Spacing="10" BackgroundColor="Black" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
         <Label x:Name="DisplayName" FontSize="Large" TextColor="White"/>
         <Label x:Name="Mail" FontSize="Small" TextColor="White" />
-        <Label x:Name="Country" FontSize="Small" TextColor="White" />
+        <Label x:Name="Country" FontSize="Large" TextColor="White" />
+    <Label x:Name="UserName" FontSize="Large" TextColor="White" />
     </StackLayout>
 </ContentPage>
