@@ -55,6 +55,7 @@ namespace ADALForForms.Model
         }
     }
 
+    
     public partial class UserModel
     {
 
@@ -172,4 +173,6 @@ namespace ADALForForms.Model
         [JsonProperty("userType")]
         public object UserType { get; set; }
     }
+
+    
 }

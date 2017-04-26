@@ -25,16 +25,9 @@ namespace BravoBooking
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", App.AuthenticationResult.AccessToken);
             var meData = await client.GetStringAsync("https://graph.microsoft.com/1.0/users");
-            var data = JsonConvert.DeserializeObject<UserModel>(meData);
-
-            foreach (var user in data)
-            {
-
-            }
-                //rom user in data.DisplayName
-                //        where user.Dis
-                //        select user.displayname;
-
+            var data = JsonConvert.DeserializeObject<RomModel>(meData);
+            var users = from user in data.Value
+                        select user.DisplayName;
             this.FileList.ItemsSource = users.ToList();
         }
     }
