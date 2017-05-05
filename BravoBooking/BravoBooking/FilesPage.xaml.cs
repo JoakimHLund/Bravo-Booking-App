@@ -21,15 +21,17 @@ namespace BravoBooking
         private async void FilesPageAppearing(object sender, EventArgs e)
         {
             var client = new HttpClient();
-
+           
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", App.AuthenticationResult.AccessToken);
-            var meData2 = await client.GetStringAsync("https://graph.microsoft.com/v1.0/me");
-            var meData = await client.GetStringAsync("https://graph.microsoft.com/v1.0/users/7da0ba65-dfd3-4f4a-a0ba-c4c9238b5b1e");
-            var data = JsonConvert.DeserializeObject<RomModel>(meData);
-            var users = from user in data.value
-                        select user.DisplayName;
-            this.FileList.ItemsSource = users.ToList();
+            //var meData2 = await client.GetStringAsync("https://graph.windows.net/strockisdev.onmicrosoft.com/oauth2PermissionGrants");
+            //System.Diagnostics.Debug.WriteLine(meData2);
+            var meData = await client.GetStringAsync("https://graph.microsoft.com/v1.0/users/");
+            //meData.Content
+            //var data = JsonConvert.DeserializeObject<RomModel>(meData.Content.ToString);
+            //var users = from user in data.value
+            //            select user.GivenName;
+            //this.FileList.ItemsSource = users.ToList();
         }
     }
 }
