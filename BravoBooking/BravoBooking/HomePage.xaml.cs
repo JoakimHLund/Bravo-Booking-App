@@ -35,5 +35,12 @@
                 tabbedPage.Children.Add(new FilesPage() { Title = "My Files" });
                 await Navigation.PushAsync(tabbedPage);
             }
+            private async void Button_OnClicked2(object sender, EventArgs e)
+            {
+                /*https://login.windows.net/common/oauth2/logout?post_logout_r‌​edirect_uri=<returnU‌​rl>*/
+                /*App.AuthenticationResult = await DependencyService.Get<IAuthenticator>()
+                    .Authenticate(null, null, null, null);*/ //Feil
+
+            }
         }
     }
