@@ -86,10 +86,11 @@ namespace BravoBooking
             {
                 var romData = await client.GetStringAsync("https://graph.microsoft.com/v1.0/users/"+a[i].Id+"/");
                 var dat = JsonConvert.DeserializeObject<RomModel>(romData);
-
+                string s = dat.ToString();
+                MainLabel.Text = "Rommet er booket" + s;
 
             }
-            MainLabel.Text = "Rommet er booket" + text;
+            
         }
 
 
