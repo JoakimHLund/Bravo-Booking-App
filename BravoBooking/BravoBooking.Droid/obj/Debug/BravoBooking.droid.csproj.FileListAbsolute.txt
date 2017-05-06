@@ -152,6 +152,9 @@ C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking.Droid
 C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking.Droid\obj\Debug\R.cs.flag
 C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking.Droid\obj\Debug\uploadflags.txt
 C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking.Droid\bin\Debug\ADALForForms.Droid.dll.mdb
+C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking.Droid\bin\Debug\System.Runtime.Serialization.Primitives.dll.mdb
+C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking.Droid\obj\Debug\android\assets\ADALForForms.dll.mdb
+C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking.Droid\obj\Debug\android\assets\ADALForForms.Droid.dll.mdb
 C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking.Droid\bin\Debug\Java.Interop.dll.mdb
 C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking.Droid\bin\Debug\Mono.Android.dll.mdb
 C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking.Droid\bin\Debug\mscorlib.dll.mdb
@@ -160,12 +163,9 @@ C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking.Droid
 C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking.Droid\bin\Debug\System.dll.mdb
 C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking.Droid\bin\Debug\System.Net.Http.dll.mdb
 C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking.Droid\bin\Debug\System.Runtime.Serialization.dll.mdb
-C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking.Droid\bin\Debug\System.Runtime.Serialization.Primitives.dll.mdb
 C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking.Droid\bin\Debug\System.ServiceModel.Internals.dll.mdb
 C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking.Droid\bin\Debug\System.Xml.dll.mdb
 C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking.Droid\bin\Debug\System.Xml.Linq.dll.mdb
-C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking.Droid\obj\Debug\android\assets\ADALForForms.dll.mdb
-C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking.Droid\obj\Debug\android\assets\ADALForForms.Droid.dll.mdb
 C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking.Droid\obj\Debug\android\assets\Java.Interop.dll.mdb
 C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking.Droid\obj\Debug\android\assets\Mono.Android.dll.mdb
 C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking.Droid\obj\Debug\android\assets\mscorlib.dll.mdb
@@ -179,3 +179,4 @@ C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking.Droid
 C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking.Droid\obj\Debug\android\assets\System.Xml.dll.mdb
 C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking.Droid\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
 C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking.Droid\obj\Debug\ADALForForms.Droid.dll.mdb
+C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking.Droid\bin\Debug\ADALForForms.Droid.dll.mdb
