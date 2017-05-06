@@ -120,3 +120,7 @@ C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\obj\D
 C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\bin\Debug\ADALForForms.dll.mdb
 C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\obj\Debug\ADALForForms.dll.mdb
 C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\bin\Debug\ADALForForms.dll.mdb
+C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\obj\Debug\ADALForForms.dll.mdb
+C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\bin\Debug\ADALForForms.dll.mdb
+C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\obj\Debug\ADALForForms.dll.mdb
+C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\bin\Debug\ADALForForms.dll.mdb
