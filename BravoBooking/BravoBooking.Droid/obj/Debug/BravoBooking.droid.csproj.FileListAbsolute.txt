@@ -181,4 +181,3 @@ C:\Users\Joakim\Desktop\O365Unified-master\BravoBooking\BravoBooking.Droid\obj\D
 C:\Users\Joakim\Desktop\O365Unified-master\BravoBooking\BravoBooking.Droid\obj\Debug\android\assets\System.Xml.dll.mdb
 C:\Users\Joakim\Desktop\O365Unified-master\BravoBooking\BravoBooking.Droid\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
 C:\Users\Joakim\Desktop\O365Unified-master\BravoBooking\BravoBooking.Droid\obj\Debug\ADALForForms.Droid.dll.mdb
-C:\Users\Joakim\Desktop\O365Unified-master\BravoBooking\BravoBooking.Droid\bin\Debug\ADALForForms.Droid.dll.mdb
