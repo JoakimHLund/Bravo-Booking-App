@@ -71,7 +71,25 @@ namespace BravoBooking
         private void BookNow_OnClicked(Object sender, EventArgs e)
         {
             string text = MainEntry.Text;
+            int antall=NumberOfPersonsPicker.SelectedIndex;
+            int start = StartTimePicker.SelectedIndex;
+            var client = new HttpClient();
 
+            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", App.AuthenticationResult.AccessToken);
+            var meData = await client.GetStringAsync("https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'M')");
+            var data = JsonConvert.DeserializeObject<RomModel>(meData);
+            var users = from user in data.value
+                        select user;
+            RomModel.value2[] a = users.ToArray();
+            DateTime.Now;
+            for(int i=0; i<a.Length;i++)
+            {
+                var romData = await client.GetStringAsync("https://graph.microsoft.com/v1.0/users/"+a[i].Id+"/");
+                var dat = JsonConvert.DeserializeObject<RomModel>(romData);
+
+
+            }
             MainLabel.Text = "Rommet er booket" + text;
         }
 
