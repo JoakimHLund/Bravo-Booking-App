@@ -50,16 +50,7 @@ namespace ADALForForms.Droid
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int avatar = 2130837504;
-			
-			// aapt resource value: 0x7f020001
-			public const int avatar1 = 2130837505;
-			
-			// aapt resource value: 0x7f020002
-			public const int icon = 2130837506;
-			
-			// aapt resource value: 0x7f020003
-			public const int settings = 2130837507;
+			public const int icon = 2130837504;
 			
 			static Drawable()
 			{
