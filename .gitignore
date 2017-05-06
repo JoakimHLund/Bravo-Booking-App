@@ -2,6 +2,11 @@
 Thumbs.db
 ehthumbs.db
 
+# Custom Ignore of DLL and other 
+.dll
+.pdb
+.cache
+
 # Folder config file
 Desktop.ini
 
