@@ -61,11 +61,13 @@ namespace ADALForForms.Model
     {
         public class value2
         {
-            
+            //[JsonProperty("@odata.context")]
+            //public string OdataContext { get; set; }
+
             //[JsonProperty("objectType")]
             //public string ObjectType { get; set; }
 
-            [JsonProperty("id")]
+            [JsonProperty("Id")]
             public string Id { get; set; }
 
             //[JsonProperty("deletionTimestamp")]
@@ -98,8 +100,8 @@ namespace ADALForForms.Model
             //[JsonProperty("facsimileTelephoneNumber")]
             //public object FacsimileTelephoneNumber { get; set; }
 
-            [JsonProperty("givenName")]
-            public string GivenName { get; set; }
+            //[JsonProperty("givenName")]
+           // public string GivenName { get; set; }
 
             //[JsonProperty("immutableId")]
             //public object ImmutableId { get; set; }
@@ -110,10 +112,8 @@ namespace ADALForForms.Model
             //[JsonProperty("lastDirSyncTime")]
             //public object LastDirSyncTime { get; set; }
 
-            
-
-            [JsonProperty("mail")]
-            public string Mail { get; set; }
+            //[JsonProperty("mail")]
+            //public string Mail { get; set; }
 
             //[JsonProperty("mailNickname")]
             //public string MailNickname { get; set; }
@@ -160,8 +160,8 @@ namespace ADALForForms.Model
             //[JsonProperty("streetAddress")]
             //public string StreetAddress { get; set; }
 
-            //[JsonProperty("surname")]
-            //public string Surname { get; set; }
+            [JsonProperty("surname")]
+            public string Surname { get; set; }
 
             //[JsonProperty("telephoneNumber")]
             //public string TelephoneNumber { get; set; }
@@ -176,7 +176,7 @@ namespace ADALForForms.Model
             //public object UserType { get; set; }
         }
     }
-    
+
     public partial class RomModel
     {
 
@@ -187,4 +187,3 @@ namespace ADALForForms.Model
         public value2[] value { get; set; }
     }
 }
-
