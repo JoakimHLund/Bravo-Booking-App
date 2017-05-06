@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="BravoBooking.HomePage">
-  <Button Text="Login" VerticalOptions="Center" HorizontalOptions="CenterAndExpand" Clicked="Button_OnClicked" />
+             x:Class="BravoBooking.HomePage" BackgroundColor="White">
+    <Button Text="Login" BackgroundColor="#be1d62" VerticalOptions="Center" HorizontalOptions="CenterAndExpand" Clicked="Button_OnClicked" />
 </ContentPage>

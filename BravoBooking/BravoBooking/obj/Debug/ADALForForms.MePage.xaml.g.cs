@@ -17,24 +17,48 @@ namespace BravoBooking {
     public partial class MePage : ContentPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private Label DisplayName;
+        private Label Velkommen;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private Label Mail;
+        private Label NumberOfPersons;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private Label Country;
+        private Picker NumberOfPersonsPicker;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private Label UserName;
+        private Label StarttTime;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private Picker StartTimePicker;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private Label Duration;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private Picker DurationPicker;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private Button BookNow;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private Label MainLabel;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private Entry MainEntry;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(MePage));
-            DisplayName = this.FindByName<Label>("DisplayName");
-            Mail = this.FindByName<Label>("Mail");
-            Country = this.FindByName<Label>("Country");
-            UserName = this.FindByName<Label>("UserName");
+            Velkommen = this.FindByName<Label>("Velkommen");
+            NumberOfPersons = this.FindByName<Label>("NumberOfPersons");
+            NumberOfPersonsPicker = this.FindByName<Picker>("NumberOfPersonsPicker");
+            StarttTime = this.FindByName<Label>("StarttTime");
+            StartTimePicker = this.FindByName<Picker>("StartTimePicker");
+            Duration = this.FindByName<Label>("Duration");
+            DurationPicker = this.FindByName<Picker>("DurationPicker");
+            BookNow = this.FindByName<Button>("BookNow");
+            MainLabel = this.FindByName<Label>("MainLabel");
+            MainEntry = this.FindByName<Entry>("MainEntry");
         }
     }
 }

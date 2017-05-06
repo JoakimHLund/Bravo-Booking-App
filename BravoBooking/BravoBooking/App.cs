@@ -4,11 +4,13 @@ using System.Linq;
 using System.Text;
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
 using Xamarin.Forms;
+using ADALForForms;
 
 namespace BravoBooking
 {
     public class App : Application
     {
+        
         internal static AuthenticationResult AuthenticationResult { get; set; }
         public App()
         {
