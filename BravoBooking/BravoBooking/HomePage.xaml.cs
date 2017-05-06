@@ -13,7 +13,8 @@
         public partial class HomePage : ContentPage
         {
             public static string clientId = "11fd1b53-7392-412c-b3cc-ba155da9773b";
-            public static string[] Scopes = { "https://graph.microsoft.com/Calendars.Read", "https://graph.microsoft.com/Contacts.Read", "https://graph.microsoft.com/User.Read", "User.ReadBasic.All" };
+            //public static string clientId = "4cd1357a-4493-488a-9bba-ebb82c15df08";
+            public static string[] Scopes = { "https://graph.microsoft.com/Calendars.Read", "https://graph.microsoft.com/Contacts.Read", "https://graph.microsoft.com/User.Read", "https://graph.microsoft.com/User.ReadBasic.All" };
             public static string authority = "https://login.microsoftonline.com/common";
             public static string returnUri = "http://bravo-booking";
             private const string graphResourceUri = "https://graph.microsoft.com";
@@ -27,6 +28,7 @@
             private async void Button_OnClicked(object sender, EventArgs e)
             {
                 
+
                 App.AuthenticationResult = await DependencyService.Get<IAuthenticator>()
                     .Authenticate(authority, graphResourceUri, clientId, returnUri);
                 var userName = App.AuthenticationResult.UserInfo.GivenName + " "

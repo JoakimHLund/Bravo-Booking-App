@@ -116,13 +116,7 @@ C:\Users\Joakim\Desktop\O365Unified-master\BravoBooking\BravoBooking\obj\Debug\A
 C:\Users\Joakim\Desktop\O365Unified-master\BravoBooking\BravoBooking\obj\Debug\ADALForForms.FilesPage.xaml.g.cs
 C:\Users\Joakim\Desktop\O365Unified-master\BravoBooking\BravoBooking\obj\Debug\ADALForForms.dll
 C:\Users\Joakim\Desktop\O365Unified-master\BravoBooking\BravoBooking\obj\Debug\ADALForForms.pdb
-C:\Users\Joakim\Desktop\O365Unified-master\BravoBooking\BravoBooking\obj\Debug\ADALForForms.dll.mdb
-C:\Users\Joakim\Desktop\O365Unified-master\BravoBooking\BravoBooking\bin\Debug\ADALForForms.dll.mdb
-C:\Users\Joakim\Desktop\O365Unified-master\BravoBooking\BravoBooking\obj\Debug\ADALForForms.dll.mdb
-C:\Users\Joakim\Desktop\O365Unified-master\BravoBooking\BravoBooking\bin\Debug\ADALForForms.dll.mdb
-C:\Users\Joakim\Desktop\O365Unified-master\BravoBooking\BravoBooking\obj\Debug\ADALForForms.dll.mdb
-C:\Users\Joakim\Desktop\O365Unified-master\BravoBooking\BravoBooking\bin\Debug\ADALForForms.dll.mdb
 C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\obj\Debug\ADALForForms.dll.mdb
 C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\bin\Debug\ADALForForms.dll.mdb
-C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\obj\Debug\ADALForForms.dll.mdb
-C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\bin\Debug\ADALForForms.dll.mdb
+C:\Users\Joakim\Desktop\O365Unified-master\BravoBooking\BravoBooking\obj\Debug\ADALForForms.dll.mdb
+C:\Users\Joakim\Desktop\O365Unified-master\BravoBooking\BravoBooking\bin\Debug\ADALForForms.dll.mdb

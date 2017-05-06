@@ -65,8 +65,8 @@ namespace ADALForForms.Model
             //[JsonProperty("objectType")]
             //public string ObjectType { get; set; }
 
-            //[JsonProperty("objectId")]
-            //public string ObjectId { get; set; }
+            [JsonProperty("id")]
+            public string Id { get; set; }
 
             //[JsonProperty("deletionTimestamp")]
             //public object DeletionTimestamp { get; set; }
@@ -92,8 +92,8 @@ namespace ADALForForms.Model
             //[JsonProperty("dirSyncEnabled")]
             //public object DirSyncEnabled { get; set; }
 
-            //[JsonProperty("displayName")]
-            //public string DisplayName { get; set; }
+            [JsonProperty("displayName")]
+            public string DisplayName { get; set; }
 
             //[JsonProperty("facsimileTelephoneNumber")]
             //public object FacsimileTelephoneNumber { get; set; }
@@ -109,6 +109,8 @@ namespace ADALForForms.Model
 
             //[JsonProperty("lastDirSyncTime")]
             //public object LastDirSyncTime { get; set; }
+
+            
 
             [JsonProperty("mail")]
             public string Mail { get; set; }

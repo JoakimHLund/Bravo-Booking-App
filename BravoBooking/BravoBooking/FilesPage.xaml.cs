@@ -10,27 +10,50 @@ using Xamarin.Forms;
 
 namespace BravoBooking
 {
-	public partial class FilesPage : ContentPage
-	{
-		public FilesPage ()
-		{
-			InitializeComponent ();
+    public partial class FilesPage : ContentPage
+    {
+        public FilesPage()
+        {
+            InitializeComponent();
             Appearing += FilesPageAppearing;
-		}
+        }
 
         private async void FilesPageAppearing(object sender, EventArgs e)
         {
             var client = new HttpClient();
-           
+
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", App.AuthenticationResult.AccessToken);
-            
-            var meData = await client.GetStringAsync("https://graph.microsoft.com/v1.0/users");
+
+            var meData = await client.GetStringAsync("https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'M')");
             var data = JsonConvert.DeserializeObject<RomModel>(meData);
             var users = from user in data.value
-                        select user.GivenName;
-            this.FileList.ItemsSource = users.ToList();
+                        select user;
+            RomModel.value2[] a = users.ToArray();
+            string[] navn = new string[a.Length];
+            string[] id = new string[a.Length];
+            for (int i = 0; i < a.Length; i++)
+            {
+                navn[i] = a[i].DisplayName;
+                id[i] = a[i].Id;
+            }
+            FileList.ItemsSource = navn;
+
+            public void Selected(RomModel.value2[] a)
+        {
+            string s = (string)FileList.SelectedItem;
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (a[i].DisplayName == s)
+                {
+
+                }
+            }
         }
     }
-}
+        }
+    
+
+    
+
 
