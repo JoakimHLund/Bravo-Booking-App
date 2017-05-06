@@ -8,8 +8,8 @@
     <ProjectGuid>{9DF2BBBC-50AD-42B5-AC74-480B7AA72294}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ADALForForms</RootNamespace>
-    <AssemblyName>ADALForForms</AssemblyName>
+    <RootNamespace>BravoBooking</RootNamespace>
+    <AssemblyName>BravoBooking</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Profile259</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
