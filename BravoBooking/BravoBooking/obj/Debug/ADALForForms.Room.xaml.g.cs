@@ -17,12 +17,12 @@ namespace BravoBooking {
     public partial class Room : ContentPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private ListView MainListView;
+        private ListView RoomList;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(Room));
-            MainListView = this.FindByName<ListView>("MainListView");
+            RoomList = this.FindByName<ListView>("RoomList");
         }
     }
 }
