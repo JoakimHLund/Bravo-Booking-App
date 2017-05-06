@@ -3,9 +3,10 @@ Thumbs.db
 ehthumbs.db
 
 # Custom Ignore of DLL and other 
-.dll
-.pdb
-.cache
+*.dll
+*.pdb
+*.cache
+*.suo
 
 # Folder config file
 Desktop.ini

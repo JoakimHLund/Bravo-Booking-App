@@ -90,6 +90,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <None Include=".vs\BravoBooking\v14\.suo" />
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
