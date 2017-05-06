@@ -100,8 +100,8 @@ namespace ADALForForms.Model
             //[JsonProperty("facsimileTelephoneNumber")]
             //public object FacsimileTelephoneNumber { get; set; }
 
-            [JsonProperty("givenName")]
-            public string GivenName { get; set; }
+            //[JsonProperty("givenName")]
+           // public string GivenName { get; set; }
 
             //[JsonProperty("immutableId")]
             //public object ImmutableId { get; set; }

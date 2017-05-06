@@ -10,13 +10,13 @@ using Xamarin.Forms;
 
 namespace BravoBooking
 {
-	public partial class FilesPage : ContentPage
-	{
-		public FilesPage ()
-		{
-			InitializeComponent ();
+    public partial class FilesPage : ContentPage
+    {
+        public FilesPage()
+        {
+            InitializeComponent();
             Appearing += FilesPageAppearing;
-		}
+        }
 
         //private async void FilesPageAppearing(object sender, EventArgs e)
         //{
@@ -39,5 +39,9 @@ namespace BravoBooking
         //    this.Fil
         //}
     }
-}
+        }
+    
+
+    
+
 

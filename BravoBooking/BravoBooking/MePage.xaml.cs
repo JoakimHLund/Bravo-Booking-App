@@ -36,7 +36,7 @@ namespace BravoBooking
         private async void MePageAppearing(object sender, EventArgs e)
         {
             var client = new HttpClient();
-
+            
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", App.AuthenticationResult.AccessToken);
             var meData = await client.GetStringAsync("https://graph.microsoft.com/v1.0/me");
