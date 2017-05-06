@@ -36,13 +36,23 @@ namespace BravoBooking
             string[] id = new string[a.Length];
             for (int i = 0; i < a.Length; i++)
             {
-                navn[i] = a[i].GivenName;
+                navn[i] = a[i].DisplayName;
                 id[i] = a[i].Id;
             }
             this.RoomList.ItemsSource = navn;
 
-
+            
         }
-
+        public void selected(RomModel.value2[] a) {
+            string s=(string)RoomList.SelectedItem;
+            for(int i = 0; i < a.Length; i++)
+            {
+                if (a[i].DisplayName == s)
+                {
+                    string id = a[i].Id;
+                }
+            }
+           
+        }
     }
 }
