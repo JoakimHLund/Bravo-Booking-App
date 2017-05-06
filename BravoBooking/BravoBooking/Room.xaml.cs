@@ -18,7 +18,7 @@ namespace BravoBooking
         {
             InitializeComponent();
             Appearing += RoomPageAppearing;
-            
+
         }
 
         private async void RoomPageAppearing(object sender, EventArgs e)
@@ -36,10 +36,10 @@ namespace BravoBooking
             string[] id = new string[a.Length];
             for (int i = 0; i < a.Length; i++)
             {
-                navn[i] = a[i].DisplayName;
+                navn[i] = a[i].GivenName;
                 id[i] = a[i].Id;
             }
-           // this.RoomList.ItemSource = navn;
+            this.RoomList.ItemsSource = navn;
 
 
         }

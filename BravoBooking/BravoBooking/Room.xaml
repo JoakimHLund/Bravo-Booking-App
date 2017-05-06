@@ -4,7 +4,7 @@
              x:Class="BravoBooking.Room" BackgroundColor="White">
 
     <ListView x:Name="RoomList" HasUnevenRows="True">
-      <ListView.ItemTemplate>
+      <!--<ListView.ItemTemplate>
         <DataTemplate>
                 <ViewCell>
                     <StackLayout Orientation="Vertical">
@@ -17,6 +17,6 @@
                     </StackLayout>
                 </ViewCell>
             </DataTemplate>
-        </ListView.ItemTemplate>
+        </ListView.ItemTemplate>-->
     </ListView>
 </ContentPage>
