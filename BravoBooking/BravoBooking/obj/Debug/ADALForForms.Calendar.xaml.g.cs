@@ -14,15 +14,19 @@ namespace BravoBooking {
     using Xamarin.Forms.Xaml;
     
     
-    public partial class FilesPage : ContentPage {
+    public partial class Calendar : ContentPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private ListView FileList;
+        private DatePicker MainDatePicker;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private Label MainLabel;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
-            this.LoadFromXaml(typeof(FilesPage));
-            FileList = this.FindByName<ListView>("FileList");
+            this.LoadFromXaml(typeof(Calendar));
+            MainDatePicker = this.FindByName<DatePicker>("MainDatePicker");
+            MainLabel = this.FindByName<Label>("MainLabel");
         }
     }
 }

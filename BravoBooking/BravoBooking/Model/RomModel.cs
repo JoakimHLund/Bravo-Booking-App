@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace ADALForForms.Model
 {
-    class RomModel
+    public class RomModel
     {
+        //public string Name { get; set; }
 
+        //public int Capacity { get; set; }
     }
 }
