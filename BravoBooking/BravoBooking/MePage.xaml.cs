@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using ADALForForms.Model;
-using Microsoft.OData.Core;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Xamarin.Forms;
@@ -68,7 +68,7 @@ namespace BravoBooking
             //DisplayAlert(name, "Selected value", "OK");
         }
 
-        private void BookNow_OnClicked(Object sender, EventArgs e)
+        private async void BookNow_OnClicked(Object sender, EventArgs e)
         {
             string text = MainEntry.Text;
             int antall=NumberOfPersonsPicker.SelectedIndex;
@@ -82,7 +82,6 @@ namespace BravoBooking
             var users = from user in data.value
                         select user;
             RomModel.value2[] a = users.ToArray();
-            DateTime.Now;
             for(int i=0; i<a.Length;i++)
             {
                 var romData = await client.GetStringAsync("https://graph.microsoft.com/v1.0/users/"+a[i].Id+"/");
