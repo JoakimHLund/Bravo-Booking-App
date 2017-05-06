@@ -21,16 +21,34 @@ namespace BravoBooking
         {
             InitializeComponent();
             Appearing += ProfilAppearing;
+
+            var tapImage = new TapGestureRecognizer();
+            //Binding events  
+            tapImage.Tapped += tapImage_Tapped;
+            //Associating tap events to the image buttons  
+            img.GestureRecognizers.Add(tapImage);
+            img1.GestureRecognizers.Add(tapImage);
+
+            string userName = App.AuthenticationResult.UserInfo.GivenName + " " + App.AuthenticationResult.UserInfo.FamilyName;
+            MinProfil.Text = "Du er logget inn som: " + userName;
+        }
+
+
+        void tapImage_Tapped(object sender, EventArgs e)
+        {
+            // handle the tap  
+            DisplayAlert("Alert", "Innstillinger", "OK");
         }
 
         private async void ProfilAppearing(object sender, EventArgs e)
         {
             var client = new HttpClient();
-
-            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", App.AuthenticationResult.AccessToken);
-            var meData = await client.GetStringAsync("https://graph.microsoft.com/beta/me");
-            var userData = JsonConvert.DeserializeObject<UserModel>(meData);
+            var userName = App.AuthenticationResult.UserInfo.GivenName + " "
+                + App.AuthenticationResult.UserInfo.FamilyName;
+            //client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            //client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", App.AuthenticationResult.AccessToken);
+            //var meData = await client.GetStringAsync("https://graph.microsoft.com/beta/me");
+            //var userData = JsonConvert.DeserializeObject<UserModel>(meData);
             //this.DisplayName.Text = userData.DisplayName;
         }
     }

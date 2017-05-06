@@ -14,7 +14,7 @@ namespace ADALForForms {
     using Xamarin.Forms.Xaml;
     
     
-    public partial class Page1 : TabbedPage {
+    public partial class Page1 : ContentPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
