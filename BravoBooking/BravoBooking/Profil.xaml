@@ -6,9 +6,12 @@
         <Image x:Name="img1" Source="avatar.png" VerticalOptions="Center" HorizontalOptions="Center"/>
         <Grid BackgroundColor="#f4b942" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
             
-                <Label x:Name="MinProfil" FontSize="Large" BackgroundColor="#f4b942" TextColor="#be1d62" Text="Du er logget inn som:"
+                <Label x:Name="MinProfil" FontSize="Large" BackgroundColor="#f4b942" TextColor="#be1d62" Text="Logget inn:"
                VerticalOptions="Center" HorizontalOptions="Center"/>
-               
+
+          <ListView x:Name="RoomList" HasUnevenRows="True">
+            
+          </ListView>
             
         </Grid>
         <Image x:Name="img" Source="settings.png" VerticalOptions="Start" HorizontalOptions="Start"/>

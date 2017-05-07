@@ -29,7 +29,9 @@ namespace ADALForForms.Model
             public start Start { get; set; }
 
             [JsonProperty("end")]
-            public end End { get; set; }
+            public atendee End { get; set; }
+            [JsonProperty("atendee")]
+            public atendee Atendee { get; set; }
 
             public class start
             {
@@ -44,6 +46,13 @@ namespace ADALForForms.Model
                 public string DateTime { get; set; }
                 [JsonProperty("TimeZone")]
                 public string TimeZone { get; set; }
+            }
+            public class atendee
+            {
+                [JsonProperty("emailAdress")]
+                public string email { get; set; }
+                [JsonProperty("name")]
+                public string name { get; set; }
             }
         }
         

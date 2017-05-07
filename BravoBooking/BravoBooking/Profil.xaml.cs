@@ -50,6 +50,26 @@ namespace BravoBooking
             //var meData = await client.GetStringAsync("https://graph.microsoft.com/beta/me");
             //var userData = JsonConvert.DeserializeObject<UserModel>(meData);
             //this.DisplayName.Text = userData.DisplayName;
+
+
+            var romData = await client.GetStringAsync("https://graph.microsoft.com/v1.0/me/events");
+            var dat = JsonConvert.DeserializeObject<CalendarModel>(romData);
+            var events = from Event in dat.value
+                         select Event;
+            CalendarModel.value2[] b = events.ToArray();
+            string[] s=new string[b.Length];
+            int j = 0;
+            for (int i = 0; i < b.Length; i++)
+            {
+                if ('M' == b[i].Atendee.name[0])
+                {
+                    s[j] = b[i].subject + "     " + b[i].Start;
+                    j++;
+                }
+
+            }
+
+
         }
     }
 }
