@@ -31,14 +31,23 @@ namespace BravoBooking
 
             string userName = App.AuthenticationResult.UserInfo.GivenName + " " + App.AuthenticationResult.UserInfo.FamilyName;
             MinProfil.Text = "Du er logget inn som: " + userName;
+
+            //Liste som henter bookinger gjort av innlogget person
+            /*var ListView = new ListView();
+            listView.ItemsSource = BookingModel.
+            Content = listView;*/
+
         }
-
-
-        void tapImage_Tapped(object sender, EventArgs e)
+        
+        private async void tapImage_Tapped(object sender, EventArgs e)
         {
             // handle the tap  
-            DisplayAlert("Alert", "Innstillinger", "OK");
+            //DisplayAlert("Alert", "Innstillinger", "OK");
+            var settingsPage = new ContentPage() { Title = "Innstillinger" };
+            await Navigation.PushModalAsync(settingsPage);
+            //await Navigation.PushModalAsync(new Settings());
         }
+
 
         private async void ProfilAppearing(object sender, EventArgs e)
         {
@@ -50,6 +59,7 @@ namespace BravoBooking
             //var meData = await client.GetStringAsync("https://graph.microsoft.com/beta/me");
             //var userData = JsonConvert.DeserializeObject<UserModel>(meData);
             //this.DisplayName.Text = userData.DisplayName;
+            
         }
     }
 }
