@@ -24,9 +24,9 @@ C:\Users\Joakim\Desktop\O365Unified-master\BravoBooking\BravoBooking.Droid\obj\D
 C:\Users\Joakim\Desktop\O365Unified-master\BravoBooking\BravoBooking.Droid\obj\Debug\android\assets\System.Diagnostics.Tools.dll
 C:\Users\Joakim\Desktop\O365Unified-master\BravoBooking\BravoBooking.Droid\obj\Debug\android\assets\System.Net.Http.dll
 C:\Users\Joakim\Desktop\O365Unified-master\BravoBooking\BravoBooking.Droid\obj\Debug\android\assets\System.Linq.dll
+C:\Users\Joakim\Desktop\O365Unified-master\BravoBooking\BravoBooking.Droid\obj\Debug\android\assets\System.Runtime.Extensions.dll
 C:\Users\Joakim\Desktop\O365Unified-master\BravoBooking\BravoBooking.Droid\obj\Debug\android\assets\System.Collections.dll
 C:\Users\Joakim\Desktop\O365Unified-master\BravoBooking\BravoBooking.Droid\obj\Debug\android\assets\System.Text.Encoding.dll
-C:\Users\Joakim\Desktop\O365Unified-master\BravoBooking\BravoBooking.Droid\obj\Debug\android\assets\System.Runtime.Extensions.dll
 C:\Users\Joakim\Desktop\O365Unified-master\BravoBooking\BravoBooking.Droid\obj\Debug\android\assets\System.Xml.XDocument.dll
 C:\Users\Joakim\Desktop\O365Unified-master\BravoBooking\BravoBooking.Droid\obj\Debug\android\assets\System.Net.Primitives.dll
 C:\Users\Joakim\Desktop\O365Unified-master\BravoBooking\BravoBooking.Droid\obj\Debug\android\assets\System.IO.dll

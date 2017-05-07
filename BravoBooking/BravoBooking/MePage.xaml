@@ -3,7 +3,7 @@
     <StackLayout Padding="20" Spacing="10" BackgroundColor="White" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
         <Label x:Name="Velkommen" TextColor="#be1d62" Text="Book et rom NÅ!" FontSize="40"/>
         <Label x:Name="NumberOfPersons" TextColor="#be1d62" FontSize = "20" Text="Velg antall personer:" />
-        <Picker x:Name="NumberOfPersonsPicker" Title="4 personer" HorizontalOptions="FillAndExpand" SelectedIndexChanged="AntallPersoner_OnSelectedIndexChanged"
+        <Picker x:Name="NumberOfPersonsPicker" Title="4 personer" HorizontalOptions="FillAndExpand" SelectedIndexChanged="AntallPersoner_OnSelectedIndexChanged" 
                 />
         <Label x:Name="StarttTime" TextColor="#be1d62" FontSize = "20" Text="Velg starttidspunkt:" />
         <Picker x:Name="StartTimePicker" Title="Akkurat nå" HorizontalOptions="FillAndExpand" SelectedIndexChanged="WhenPicker_OnSelectedIndexChanged"
