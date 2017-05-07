@@ -58,9 +58,6 @@
     <Compile Include="MePage.xaml.cs">
       <DependentUpon>MePage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="RomTid.xaml.cs">
-      <DependentUpon>RomTid.xaml</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.IdentityModel.Clients.ActiveDirectory">
@@ -112,9 +109,6 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="MePage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Include="RomTid.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
