@@ -5,7 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace ADALForForms.iOS
+namespace BravoBooking.iOS
 {
     public class Application
     {
