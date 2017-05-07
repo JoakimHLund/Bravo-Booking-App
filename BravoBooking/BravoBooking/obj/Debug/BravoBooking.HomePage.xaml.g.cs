@@ -14,15 +14,11 @@ namespace BravoBooking {
     using Xamarin.Forms.Xaml;
     
     
-    public partial class Room : ContentPage {
-        
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private ListView RoomList;
+    public partial class HomePage : ContentPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
-            this.LoadFromXaml(typeof(Room));
-            RoomList = this.FindByName<ListView>("RoomList");
+            this.LoadFromXaml(typeof(HomePage));
         }
     }
 }
