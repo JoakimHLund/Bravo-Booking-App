@@ -14,6 +14,6 @@
         <Button x:Name="BookNow" BackgroundColor="#be1d62" Clicked="BookNow_OnClicked" TextColor ="White" FontSize ="20" Text="Book NÅ!" />
         <Label x:Name="MainLabel" TextColor="#be1d62" FontSize = "20" />
         <Entry x:Name="MainEntry"/>
-    
+    test
     </StackLayout>
 </ContentPage>
