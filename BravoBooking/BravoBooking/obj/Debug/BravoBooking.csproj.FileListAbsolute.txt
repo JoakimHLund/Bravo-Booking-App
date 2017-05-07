@@ -184,3 +184,6 @@ C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\bin\D
 C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\obj\Debug\BravoBooking.HomePage.xaml.g.cs
 C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\obj\Debug\BravoBooking.MePage.xaml.g.cs
 C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\obj\Debug\BravoBooking.Room.xaml.g.cs
+C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\obj\Debug\BravoBooking.Profil.xaml.g.cs
+C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\obj\Debug\BravoBooking.Calendar.xaml.g.cs
+C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\obj\Debug\BravoBooking.Settings.xaml.g.cs
