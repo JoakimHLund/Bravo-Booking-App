@@ -45,3 +45,6 @@ Temporary Items
 # Individual Cache and DLL Files
 *.dll
 *.suo
+/BravoBooking/BravoBooking/obj/Debug
+*.cs
+/BravoBooking/BravoBooking/obj/Debug
