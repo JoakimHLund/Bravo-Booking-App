@@ -29,7 +29,7 @@ namespace ADALForForms.Model
             public start Start { get; set; }
 
             [JsonProperty("end")]
-            public atendee End { get; set; }
+            public end End { get; set; }
             [JsonProperty("atendee")]
             public atendee Atendee { get; set; }
 

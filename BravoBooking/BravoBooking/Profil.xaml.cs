@@ -51,7 +51,8 @@ namespace BravoBooking
             //var userData = JsonConvert.DeserializeObject<UserModel>(meData);
             //this.DisplayName.Text = userData.DisplayName;
 
-
+            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", App.AuthenticationResult.AccessToken);
             var romData = await client.GetStringAsync("https://graph.microsoft.com/v1.0/me/events");
             var dat = JsonConvert.DeserializeObject<CalendarModel>(romData);
             var events = from Event in dat.value
@@ -63,11 +64,21 @@ namespace BravoBooking
             {
                 if ('M' == b[i].Atendee.name[0])
                 {
-                    s[j] = b[i].subject + "     " + b[i].Start;
+                    s[j] = b[i].subject + "     " + b[i].Start.DateTime;
                     j++;
                 }
 
             }
+            if (j==0)
+            {
+                string[] ingen = { "Du har ingen kommende møter" };
+                this.RoomList.ItemsSource = ingen;
+            }
+            else
+            {
+                this.RoomList.ItemsSource = s;
+            }
+            
 
 
         }

@@ -11,9 +11,11 @@
 
           <ListView x:Name="RoomList" HasUnevenRows="True">
             
-          </ListView>
+        </ListView>
             
         </Grid>
+        
+      
         <Image x:Name="img" Source="settings.png" VerticalOptions="Start" HorizontalOptions="Start"/>
     </StackLayout>
 </ContentPage>
