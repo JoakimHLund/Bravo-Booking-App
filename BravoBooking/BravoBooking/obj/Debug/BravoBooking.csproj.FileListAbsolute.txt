@@ -190,9 +190,6 @@ C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\obj\D
 C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\obj\Debug\BravoBooking.Profil.xaml.g.cs
 C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\obj\Debug\BravoBooking.Calendar.xaml.g.cs
 C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\obj\Debug\BravoBooking.Room.xaml.g.cs
-C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\obj\Debug\BravoBooking.Profil.xaml.g.cs
-C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\obj\Debug\BravoBooking.Calendar.xaml.g.cs
-C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\obj\Debug\BravoBooking.Settings.xaml.g.cs
 C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\obj\Debug\BravoBooking.Settings.xaml.g.cs
 C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\obj\Debug\BravoBooking.csprojResolveAssemblyReference.cache
 C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\obj\Debug\BravoBooking.RomTid.xaml.g.cs
