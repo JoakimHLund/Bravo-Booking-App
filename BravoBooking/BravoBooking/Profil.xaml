@@ -2,17 +2,22 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BravoBooking.Profil">
-    <StackLayout Padding="20" Spacing="10" BackgroundColor="White" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-        <Image x:Name="img1" Source="avatar.png" VerticalOptions="Center" HorizontalOptions="Center"/>
-        <Grid BackgroundColor="#f7bf5d" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
-
-            <Label x:Name="MinProfil" FontSize="Large" BackgroundColor="#f7bf5d" TextColor="#be1d62" Text="Du er logget inn som:"
-               VerticalOptions="Center" HorizontalOptions="Center"/>
+    <StackLayout Orientation="Horizontal" Padding="20" Spacing="10" BackgroundColor="#332d2d" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <Grid>
+            <Image x:Name="img1"  Grid.Row="0" Grid.Column="0" Source="avatar.png" VerticalOptions="Start" HorizontalOptions="Start"/>
+            <Image x:Name="img"  Grid.Row="0" Grid.Column="1" Source="settings.png" VerticalOptions="Start" HorizontalOptions="Start"/>
+            <Image x:Name="img2"  Grid.Row="0" Grid.Column="2" Source="logout.png" VerticalOptions="Start" HorizontalOptions="Start"/>
+        
+        <!--<Button x:Name="LogOut" WidthRequest="70" HeightRequest="70" BackgroundColor="#ff8300" 
+                    Clicked="LogOut_OnClicked" TextColor ="White" FontSize ="20" Text="Logg ut" />
+                <Label x:Name="MainLabel" TextColor="#be1d62" FontSize = "20" />
+            <Entry x:Name="MainEntry"/>-->
+        
+            <Label x:Name="MinProfil" FontSize="Large" BackgroundColor="#332d2d" TextColor="#ff8300" Text="Du er logget inn som:"
+               Grid.Row="0" Grid.Column="0" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
             <ListView x:Name="listView">
-                
             </ListView>
-            
         </Grid>
-        <Image x:Name="img" Source="settings.png" VerticalOptions="Start" HorizontalOptions="Start"/>
+
     </StackLayout>
 </ContentPage>

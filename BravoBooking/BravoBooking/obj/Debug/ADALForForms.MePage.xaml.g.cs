@@ -17,9 +17,6 @@ namespace BravoBooking {
     public partial class MePage : ContentPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private Label Velkommen;
-        
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private Label NumberOfPersons;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
@@ -49,7 +46,6 @@ namespace BravoBooking {
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(MePage));
-            Velkommen = this.FindByName<Label>("Velkommen");
             NumberOfPersons = this.FindByName<Label>("NumberOfPersons");
             NumberOfPersonsPicker = this.FindByName<Picker>("NumberOfPersonsPicker");
             StarttTime = this.FindByName<Label>("StarttTime");

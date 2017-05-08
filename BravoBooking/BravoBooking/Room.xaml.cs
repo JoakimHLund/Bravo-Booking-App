@@ -19,7 +19,12 @@ namespace BravoBooking
             InitializeComponent();
             Appearing += RoomPageAppearing;
 
+            //var rom = new ListViewItem { BackColor = "Red" };
+
         }
+
+        
+        
 
         private async void RoomPageAppearing(object sender, EventArgs e)
         {
@@ -40,10 +45,12 @@ namespace BravoBooking
                 id[i] = a[i].Id;
             }
             this.RoomList.ItemsSource = navn;
-
             
+
+
         }
-        public void selected(RomModel.value2[] a) {
+        public void selected(RomModel.value2[] a)
+        {
             string s=(string)RoomList.SelectedItem;
             for(int i = 0; i < a.Length; i++)
             {
@@ -51,8 +58,37 @@ namespace BravoBooking
                 {
                     string id = a[i].Id;
                 }
+                
             }
-           
+            
         }
+
+        /*private async void RoomList_OnItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            /*if(e.SelectedItem != null)
+            {
+                //var selection = e.SelectedItem as RomModel.value2;
+                //var name = RoomList[Items]
+                var romInfo = new ContentPage() { Title = "Bravo Booking" };
+                    await Navigation.PushAsync(romInfo);
+                //DisplayAlert("Du har valgt et rom", selection.DisplayName, "OK");
+                    
+            }
+            //var romInfo = new ContentPage() { Title = "Bravo Booking" };
+            //await Navigation.PushAsync(romInfo);*/
+        
+
+        private async void RoomList_OnItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            if (e.SelectedItem != null)
+            {
+                var selection = e.SelectedItem as string;
+                //DisplayAlert("Du har valgt et rom", selection, "OK");
+                var roomInfo = new RoomInfo() { Title = "Bravo Booking" };
+                //roomInfo(new RoomInfo() { Title = "Book NÅ" });
+                await Navigation.PushAsync(roomInfo);
+            }
+        }
+        
     }
 }

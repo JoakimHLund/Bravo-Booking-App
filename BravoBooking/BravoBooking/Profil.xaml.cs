@@ -28,15 +28,11 @@ namespace BravoBooking
             //Associating tap events to the image buttons  
             img.GestureRecognizers.Add(tapImage);
             img1.GestureRecognizers.Add(tapImage);
+            img2.GestureRecognizers.Add(tapImage);
 
             string userName = App.AuthenticationResult.UserInfo.GivenName + " " + App.AuthenticationResult.UserInfo.FamilyName;
             MinProfil.Text = "Du er logget inn som: " + userName;
-
-            //Liste som henter bookinger gjort av innlogget person
-            /*var ListView = new ListView();
-            listView.ItemsSource = BookingModel.
-            Content = listView;*/
-
+            
         }
         
         private async void tapImage_Tapped(object sender, EventArgs e)
@@ -44,10 +40,29 @@ namespace BravoBooking
             // handle the tap  
             //DisplayAlert("Alert", "Innstillinger", "OK");
             var settingsPage = new ContentPage() { Title = "Innstillinger" };
+            
             await Navigation.PushModalAsync(settingsPage);
             //await Navigation.PushModalAsync(new Settings());
         }
 
+        /*private async void LogOut_OnClicked(Object sender, EventArgs e)
+        {
+            //metode for å logge ut 
+            MainLabel.Text = "Logg ut"; 
+        }*/
+
+        /*public static Page GetSettings()
+        {
+            return new ContentPage
+            {
+                Content = new Label
+                {
+                    Text = "Hello, Forms!",
+                    VerticalOptions = LayoutOptions.CenterAndExpand,
+                    HorizontalOptions = LayoutOptions.CenterAndExpand,
+                },
+            };
+        }*/
 
         private async void ProfilAppearing(object sender, EventArgs e)
         {

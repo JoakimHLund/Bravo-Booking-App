@@ -31,7 +31,7 @@ namespace BravoBooking
             MainLabel.Text = "Rommet er booket" + text;
         }*/
 
-        DateTime startTime = DateTime.Now;
+        /*DateTime startTime = DateTime.Now;
         public DateTime StartTime
         {
             get { return startTime; }
@@ -43,7 +43,7 @@ namespace BravoBooking
         {
             get { return endTime; }
             //set { SetProperty(ref endTime, value); }
-        }
+        }*/
 
     }
 }

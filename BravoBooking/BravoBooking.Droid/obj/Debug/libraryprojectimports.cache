@@ -2,9 +2,9 @@
 <Paths>
   <Jars></Jars>
   <ResolvedResourceDirectories>
-    <ResolvedResourceDirectory>C:\Users\Joakim\Desktop\O365Unified-master\BravoBooking\BravoBooking.Droid\obj\Debug\__library_projects__\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform\library_project_imports\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>C:\Users\Joakim\Desktop\O365Unified-master\BravoBooking\BravoBooking.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android\library_project_imports\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>C:\Users\Joakim\Desktop\O365Unified-master\BravoBooking\BravoBooking.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Platform\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\synne\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking.Droid\obj\Debug\__library_projects__\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\synne\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\synne\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Platform\library_project_imports\res</ResolvedResourceDirectory>
   </ResolvedResourceDirectories>
   <ResolvedAssetDirectories>
     <ResolvedAssetDirectory>obj\Debug\__library_projects__\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform\library_project_imports\assets</ResolvedAssetDirectory>
@@ -13,8 +13,8 @@
   </ResolvedAssetDirectories>
   <ResolvedEnvironmentFiles />
   <ResolvedResourceDirectoryStamps>
-    <ResolvedResourceDirectoryStamp>C:\Users\Joakim\Desktop\O365Unified-master\BravoBooking\BravoBooking.Droid\obj\Debug\__library_projects__\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>C:\Users\Joakim\Desktop\O365Unified-master\BravoBooking\BravoBooking.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>C:\Users\Joakim\Desktop\O365Unified-master\BravoBooking\BravoBooking.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Platform.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\synne\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking.Droid\obj\Debug\__library_projects__\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\synne\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\synne\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Platform.stamp</ResolvedResourceDirectoryStamp>
   </ResolvedResourceDirectoryStamps>
 </Paths>

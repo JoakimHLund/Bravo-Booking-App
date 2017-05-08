@@ -23,10 +23,18 @@ namespace BravoBooking {
         private Label MainLabel;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private TimePicker StartTime;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private TimePicker EndTime;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(Calendar));
             MainDatePicker = this.FindByName<DatePicker>("MainDatePicker");
             MainLabel = this.FindByName<Label>("MainLabel");
+            StartTime = this.FindByName<TimePicker>("StartTime");
+            EndTime = this.FindByName<TimePicker>("EndTime");
         }
     }
 }
