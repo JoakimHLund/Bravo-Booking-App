@@ -2,6 +2,7 @@
 using System.Globalization;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using ADALForForms.Model;
@@ -140,12 +141,24 @@ namespace BravoBooking
                     //meeting.Atendee.email = a[i].Mail;
                     //meeting.subject = "Meeting at " + a[i].DisplayName;
                     string json = JsonConvert.SerializeObject(meeting);
-                    var httpContent = new StringContent(json);
-                    var send = await client.PostAsync("https://graph.microsoft.com/v1.0/me/events", httpContent);
                     
+                    var httpContent = new StringContent(json, Encoding.UTF8, "application/json");
+                    using (var httpClient = new HttpClient())
+                    {
+                        var httpResponse = await httpClient.PostAsync("https://graph.microsoft.com/v1.0/me/events", httpContent);
+                        if (httpResponse.Content != null)
+                        {
+                            var send = await httpResponse.Content.ReadAsStringAsync();
+                            MainLabel.Text = send.ToString();
+                        }
+                    }
 
+
+                        //var send = await client.PostAsync("https://graph.microsoft.com/v1.0/me/events", httpContent);
+                    
+                    
                     done = true;
-                    MainLabel.Text = send.ToString();
+                    
                     break;
               
                 }

@@ -20,10 +20,12 @@ namespace ADALForForms.Model
                 subject = su;
                 Start = new start();
                 Start.DateTime = st;
+                Start.TimeZone = "UTC";
                 End = new end();
                 End.DateTime = en;
+                End.TimeZone = "UTC";
                 Attendees = new atendee();
-                Attendees.email = em;
+                Attendees.adress = em;
                 Attendees.name = name;
 
 
@@ -63,10 +65,12 @@ namespace ADALForForms.Model
             }
             public class atendee
             {
-                [JsonProperty("emailAdress")]
-                public string email { get; set; }
+                [JsonProperty("adress")]
+                 public string adress { get; set; }
                 [JsonProperty("name")]
-                public string name { get; set; }
+                 public string name { get; set; }
+                
+                
             }
         }
         
