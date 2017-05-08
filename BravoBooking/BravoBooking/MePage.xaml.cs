@@ -133,20 +133,19 @@ namespace BravoBooking
                 {
                     //<TODO: Sette Opp møte mellom (now) og (end) på møterom b[i]>
 
-                    CalendarModel.value2 meeting = new CalendarModel.value2();
-                    meeting.Start.DateTime = date.ToString();
-                    meeting.End.DateTime = end.ToString();
-                    meeting.Atendee.name = a[i].DisplayName;
-                    meeting.Atendee.email = a[i].Mail;
-                    meeting.subject = "Meeting at " + a[i].DisplayName;
+                    CalendarModel.value2 meeting = new CalendarModel.value2("Meeting at " + a[i].DisplayName, date.ToString(), end.ToString(), a[i].Mail, a[i].DisplayName);
+                    //meeting.Start.DateTime = date.ToString("MM'/'dd'/'yyyy HH':'mm':'ss.fff");
+                    //meeting.End.DateTime = end.ToString();
+                    //meeting.Atendee.name = a[i].DisplayName;
+                    //meeting.Atendee.email = a[i].Mail;
+                    //meeting.subject = "Meeting at " + a[i].DisplayName;
                     string json = JsonConvert.SerializeObject(meeting);
                     var httpContent = new StringContent(json);
-
-                    using (var httpClient=new HttpContent())
-                    var send = await client.PostAsync("https://graph.microsoft.com/v1.0/me/events", json);
-
+                    var send = await client.PostAsync("https://graph.microsoft.com/v1.0/me/events", httpContent);
+                    
 
                     done = true;
+                    MainLabel.Text = send.ToString();
                     break;
                 }
 
@@ -154,14 +153,14 @@ namespace BravoBooking
                 
 
             }
-            if (done)
-            {
-                MainLabel.Text = "Rommet er booket";
-            }
-            else
-            {
-                MainLabel.Text = "Det er desverre ingen ledige rom som passer dine kriterier.";
-            }            
+            //if (done)
+            //{
+            //    MainLabel.Text = "Rommet er booket";
+            //}
+            //else
+            //{
+            //    MainLabel.Text = "Det er desverre ingen ledige rom som passer dine kriterier.";
+            //}            
         }
 
 

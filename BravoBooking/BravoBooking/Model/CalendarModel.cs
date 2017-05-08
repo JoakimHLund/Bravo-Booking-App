@@ -14,6 +14,20 @@ namespace ADALForForms.Model
     {
         public class value2
         {
+            start s;
+            end e;
+            atendee a;
+            public value2(string su, string st, string en, string em, string name)
+            {
+                subject = su;
+                s = new start();
+                s.DateTime = st;
+                e = new end();
+                e.DateTime = en;
+                a = new atendee();
+                a.email = em;
+                a.name = name;
+            }
             [JsonProperty("@odata.context")]
             public string OdataContext { get; set; }
 
