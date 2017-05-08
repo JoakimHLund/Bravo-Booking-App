@@ -147,20 +147,21 @@ namespace BravoBooking
                     done = true;
                     MainLabel.Text = send.ToString();
                     break;
+              
                 }
 
                
                 
 
             }
-            //if (done)
-            //{
-            //    MainLabel.Text = "Rommet er booket";
-            //}
-            //else
-            //{
-            //    MainLabel.Text = "Det er desverre ingen ledige rom som passer dine kriterier.";
-            //}            
+            if (done)
+            {
+                MainLabel.Text = "Rommet er booket";
+            }
+            else
+            {
+                MainLabel.Text = "Det er desverre ingen ledige rom som passer dine kriterier.";
+            }
         }
 
 
