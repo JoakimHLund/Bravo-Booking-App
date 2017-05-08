@@ -62,7 +62,7 @@ namespace BravoBooking
             int j = 0;
             for (int i = 0; i < b.Length; i++)
             {
-                if ('M' == b[i].Atendee.name[0])
+                if ('M' == b[i].Attendees.name[0])
                 {
                     s[j] = b[i].subject + "     " + b[i].Start.DateTime;
                     j++;
