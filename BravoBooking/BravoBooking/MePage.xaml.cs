@@ -132,6 +132,11 @@ namespace BravoBooking
                 if (free)
                 {
                     //<TODO: Sette Opp møte mellom (now) og (end) på møterom b[i]>
+
+                    //CalendarModel.value2 meeting = new CalendarModel.value2();
+                    //meeting.Start.DateTime = date.ToString();
+                    //meeting.End.DateTime
+
                     done = true;
                     break;
                 }
