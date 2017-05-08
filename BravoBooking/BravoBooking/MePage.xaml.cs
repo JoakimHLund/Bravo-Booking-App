@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
@@ -70,9 +71,31 @@ namespace BravoBooking
 
         private async void BookNow_OnClicked(Object sender, EventArgs e)
         {
+
+           
             string text = MainEntry.Text;
-            int antall=NumberOfPersonsPicker.SelectedIndex;
-            int start = StartTimePicker.SelectedIndex;
+            string antalls=NumberOfPersonsPicker.Items[Math.Max(0,NumberOfPersonsPicker.SelectedIndex)];
+            int startint = Math.Max(0,StartTimePicker.SelectedIndex);
+            string varig = DurationPicker.Items[Math.Max(0,DurationPicker.SelectedIndex)];
+            DateTime now = DateTime.Now;
+
+
+            int antall = int.Parse(antalls[0].ToString());
+
+            if (startint == 1)
+            {
+                startint = 30;
+            }
+            else if (startint == 2)
+            {
+                startint = 60;
+            }
+            
+            DateTime date=now.AddMinutes((double)startint);
+
+            DateTime end = date.AddHours(Double.Parse(varig[0].ToString()));;
+            
+
             var client = new HttpClient();
 
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
@@ -82,15 +105,49 @@ namespace BravoBooking
             var users = from user in data.value
                         select user;
             RomModel.value2[] a = users.ToArray();
-            for(int i=0; i<a.Length;i++)
+            bool done = false;
+
+            for(int i=0; i<1;i++)
             {
-                var romData = await client.GetStringAsync("https://graph.microsoft.com/v1.0/users/"+a[i].Id+"/");
-                var dat = JsonConvert.DeserializeObject<RomModel>(romData);
-                string s = dat.ToString();
-                MainLabel.Text = "Rommet er booket" + s;
+                //<TODO: Kode å filtrere etter antall personer>
+                bool free=true;
+                //var romData = await client.GetStringAsync("https://graph.microsoft.com/v1.0/users/"+a[i].Id+ "/events");
+                var romData = await client.GetStringAsync("https://graph.microsoft.com/v1.0/me/events");
+                var dat = JsonConvert.DeserializeObject<CalendarModel>(romData);
+                var events = from Event in dat.value
+                             select Event;
+                CalendarModel.value2[] b = events.ToArray();
+
+
+                for(int j = 0; j < b.Length; j++)
+                {
+                    DateTime starten = Convert.ToDateTime(b[j].Start.DateTime);
+                    DateTime slutten = Convert.ToDateTime(b[j].End.DateTime);
+                    if ((starten > date && starten < end)||(slutten>date && slutten<end))
+                    {
+                        free = false;
+                        break;
+                    }
+                }
+                if (free)
+                {
+                    //<TODO: Sette Opp møte mellom (now) og (end) på møterom b[i]>
+                    done = true;
+                    break;
+                }
+
+               
+                
 
             }
-            
+            if (done)
+            {
+                MainLabel.Text = "Rommet er booket";
+            }
+            else
+            {
+                MainLabel.Text = "Det er desverre ingen ledige rom som passer dine kriterier.";
+            }            
         }
 
 

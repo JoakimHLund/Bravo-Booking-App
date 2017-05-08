@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/form" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="BravoBooking.MePage" xmlns:local="clr-namespace:BravoBooking">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="BravoBooking.MePage" xmlns:local="clr-namespace:BravoBooking">
     <StackLayout Padding="20" Spacing="10" BackgroundColor="White" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
         
         <Label x:Name="NumberOfPersons" TextColor="#be1d62" FontSize = "20" Text="Velg antall personer:" />
-        <Picker x:Name="NumberOfPersonsPicker" Title="4 personer" HorizontalOptions="FillAndExpand" SelectedIndexChanged="AntallPersoner_OnSelectedIndexChanged"
+        <Picker x:Name="NumberOfPersonsPicker" Title="4 personer" HorizontalOptions="FillAndExpand" SelectedIndexChanged="AntallPersoner_OnSelectedIndexChanged" 
                 />
         <Label x:Name="StarttTime" TextColor="#be1d62" FontSize = "20" Text="Velg starttidspunkt:" />
         <Picker x:Name="StartTimePicker" Title="Akkurat nå" HorizontalOptions="FillAndExpand" SelectedIndexChanged="WhenPicker_OnSelectedIndexChanged"

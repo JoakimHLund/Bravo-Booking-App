@@ -47,6 +47,10 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# Individual Cache and DLL Files
+*.dll
+*.suo
 /BravoBooking/BravoBooking/obj/Debug
+*.cs
 /BravoBooking/BravoBooking/obj/Debug
-/BravoBooking/BravoBooking/obj/Debug/ADALForForms.Settings.xaml.g.cs
