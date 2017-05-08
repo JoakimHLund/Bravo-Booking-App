@@ -1,4 +1,4 @@
-﻿using ADALForForms.Model;
+﻿using BravoBooking.Model;
 using BravoBooking;
 using Newtonsoft.Json;
 using System;
@@ -49,7 +49,7 @@ namespace BravoBooking
         }
 
 
-        private async void ProfilAppearing(object sender, EventArgs e)
+        /*private async void ProfilAppearing(object sender, EventArgs e)
         {
             var client = new HttpClient();
             var userName = App.AuthenticationResult.UserInfo.GivenName + " "
@@ -60,6 +60,6 @@ namespace BravoBooking
             //var userData = JsonConvert.DeserializeObject<UserModel>(meData);
             //this.DisplayName.Text = userData.DisplayName;
             
-        }
+        }*/
     }
 }

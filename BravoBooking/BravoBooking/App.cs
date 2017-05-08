@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
 using Xamarin.Forms;
-using ADALForForms;
 
 namespace BravoBooking
 {
