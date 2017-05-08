@@ -16,7 +16,7 @@ namespace BravoBooking
 
         public Room()
         {
-            InitializeComponent();
+            InitializeComponent ();
             Appearing += RoomPageAppearing;
 
         }
