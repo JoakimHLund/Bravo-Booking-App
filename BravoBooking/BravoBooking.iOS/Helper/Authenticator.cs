@@ -8,8 +8,8 @@ using Microsoft.IdentityModel.Clients.ActiveDirectory;
 using UIKit;
 using Xamarin.Forms;
 
-[assembly: Dependency(typeof(ADALForForms.iOS.Helper.Authenticator))]
-namespace ADALForForms.iOS.Helper
+[assembly: Dependency(typeof(BravoBooking.iOS.Helper.Authenticator))]
+namespace BravoBooking.iOS.Helper
 {
     class Authenticator : IAuthenticator
     {

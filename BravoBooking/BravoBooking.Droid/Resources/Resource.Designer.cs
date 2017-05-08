@@ -9,9 +9,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("ADALForForms.Droid.Resource", IsApplication=true)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("BravoBooking.Droid.Resource", IsApplication=true)]
 
-namespace ADALForForms.Droid
+namespace BravoBooking.Droid
 {
 	
 	
@@ -26,11 +26,11 @@ namespace ADALForForms.Droid
 		
 		public static void UpdateIdValues()
 		{
-			global::Microsoft.IdentityModel.Clients.ActiveDirectory.Resource.Id.agentWebView = global::ADALForForms.Droid.Resource.Id.agentWebView;
-			global::Microsoft.IdentityModel.Clients.ActiveDirectory.Resource.Layout.WebAuthenticationBroker = global::ADALForForms.Droid.Resource.Layout.WebAuthenticationBroker;
-			global::Microsoft.IdentityModel.Clients.ActiveDirectory.Resource.String.ApplicationName = global::ADALForForms.Droid.Resource.String.ApplicationName;
-			global::Xamarin.Forms.Platform.Resource.String.ApplicationName = global::ADALForForms.Droid.Resource.String.ApplicationName;
-			global::Xamarin.Forms.Platform.Resource.String.Hello = global::ADALForForms.Droid.Resource.String.Hello;
+			global::Microsoft.IdentityModel.Clients.ActiveDirectory.Resource.Id.agentWebView = global::BravoBooking.Droid.Resource.Id.agentWebView;
+			global::Microsoft.IdentityModel.Clients.ActiveDirectory.Resource.Layout.WebAuthenticationBroker = global::BravoBooking.Droid.Resource.Layout.WebAuthenticationBroker;
+			global::Microsoft.IdentityModel.Clients.ActiveDirectory.Resource.String.ApplicationName = global::BravoBooking.Droid.Resource.String.ApplicationName;
+			global::Xamarin.Forms.Platform.Resource.String.ApplicationName = global::BravoBooking.Droid.Resource.String.ApplicationName;
+			global::Xamarin.Forms.Platform.Resource.String.Hello = global::BravoBooking.Droid.Resource.String.Hello;
 		}
 		
 		public partial class Attribute
