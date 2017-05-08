@@ -96,6 +96,7 @@ namespace BravoBooking
 
             DateTime end = date.AddHours(Double.Parse(varig[0].ToString()));;
             
+            
 
             var client = new HttpClient();
 
@@ -113,7 +114,7 @@ namespace BravoBooking
                 //<TODO: Kode å filtrere etter antall personer>
                 bool free=true;
                 //var romData = await client.GetStringAsync("https://graph.microsoft.com/v1.0/users/"+a[i].Id+ "/events");
-                var romData = await client.GetStringAsync("https://graph.microsoft.com/v1.0/me/events");
+                var romData = await client.GetStringAsync("https://graph.microsoft.com/v1.0/me/events?$select=subject,start,end");
                 var dat = JsonConvert.DeserializeObject<CalendarModel>(romData);
                 var events = from Event in dat.value
                              select Event;
