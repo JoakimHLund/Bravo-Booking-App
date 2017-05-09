@@ -7,6 +7,7 @@ using Foundation;
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
 using UIKit;
 using Xamarin.Forms;
+using BravoBooking;
 
 [assembly: Dependency(typeof(BravoBooking.iOS.Helper.Authenticator))]
 namespace BravoBooking.iOS.Helper

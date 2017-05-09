@@ -2,6 +2,7 @@
 using System.Globalization;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using BravoBooking.Model;
@@ -95,6 +96,7 @@ namespace BravoBooking
 
             DateTime end = date.AddHours(Double.Parse(varig[0].ToString()));;
             
+            
 
             var client = new HttpClient();
 
@@ -112,7 +114,7 @@ namespace BravoBooking
                 //<TODO: Kode å filtrere etter antall personer>
                 bool free=true;
                 //var romData = await client.GetStringAsync("https://graph.microsoft.com/v1.0/users/"+a[i].Id+ "/events");
-                var romData = await client.GetStringAsync("https://graph.microsoft.com/v1.0/me/events");
+                var romData = await client.GetStringAsync("https://graph.microsoft.com/v1.0/me/events?$select=subject,start,end");
                 var dat = JsonConvert.DeserializeObject<CalendarModel>(romData);
                 var events = from Event in dat.value
                              select Event;
@@ -132,8 +134,34 @@ namespace BravoBooking
                 if (free)
                 {
                     //<TODO: Sette Opp møte mellom (now) og (end) på møterom b[i]>
+
+                    CalendarModel.value2 meeting = new CalendarModel.value2("Meeting at " + a[i].DisplayName, date.ToString(), end.ToString(), a[i].Mail, a[i].DisplayName);
+                    //meeting.Start.DateTime = date.ToString("MM'/'dd'/'yyyy HH':'mm':'ss.fff");
+                    //meeting.End.DateTime = end.ToString();
+                    //meeting.Atendee.name = a[i].DisplayName;
+                    //meeting.Atendee.email = a[i].Mail;
+                    //meeting.subject = "Meeting at " + a[i].DisplayName;
+                    string json = JsonConvert.SerializeObject(meeting);
+                    
+                    var httpContent = new StringContent(json, Encoding.UTF8, "application/json");
+                    using (var httpClient = new HttpClient())
+                    {
+                        var httpResponse = await httpClient.PostAsync("https://graph.microsoft.com/v1.0/me/events", httpContent);
+                        if (httpResponse.Content != null)
+                        {
+                            var send = await httpResponse.Content.ReadAsStringAsync();
+                            MainLabel.Text = send.ToString();
+                        }
+                    }
+
+
+                        //var send = await client.PostAsync("https://graph.microsoft.com/v1.0/me/events", httpContent);
+                    
+                    
                     done = true;
+                    
                     break;
+              
                 }
 
                
@@ -147,7 +175,7 @@ namespace BravoBooking
             else
             {
                 MainLabel.Text = "Det er desverre ingen ledige rom som passer dine kriterier.";
-            }            
+            }
         }
 
 

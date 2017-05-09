@@ -14,6 +14,22 @@ namespace BravoBooking.Model
     {
         public class value2
         {
+
+            public value2(string su, string st, string en, string em, string name)
+            {
+                subject = su;
+                Start = new start();
+                Start.DateTime = st;
+                Start.TimeZone = "UTC";
+                End = new end();
+                End.DateTime = en;
+                End.TimeZone = "UTC";
+                Attendees = new atendee();
+                Attendees.adress = em;
+                Attendees.name = name;
+
+
+            }
             [JsonProperty("@odata.context")]
             public string OdataContext { get; set; }
 
@@ -30,6 +46,8 @@ namespace BravoBooking.Model
 
             [JsonProperty("end")]
             public end End { get; set; }
+            [JsonProperty("attendees")]
+            public atendee Attendees { get; set; }
 
             public class start
             {
@@ -44,6 +62,15 @@ namespace BravoBooking.Model
                 public string DateTime { get; set; }
                 [JsonProperty("TimeZone")]
                 public string TimeZone { get; set; }
+            }
+            public class atendee
+            {
+                [JsonProperty("adress")]
+                 public string adress { get; set; }
+                [JsonProperty("name")]
+                 public string name { get; set; }
+                
+                
             }
         }
         

@@ -16,7 +16,7 @@ namespace BravoBooking
 
         public Room()
         {
-            InitializeComponent();
+            InitializeComponent ();
             Appearing += RoomPageAppearing;
 
         }
@@ -40,6 +40,7 @@ namespace BravoBooking
                 id[i] = a[i].Id;
             }
             this.RoomList.ItemsSource = navn;
+            
 
             
         }

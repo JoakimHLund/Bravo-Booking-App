@@ -112,8 +112,8 @@ namespace BravoBooking.Model
             //[JsonProperty("lastDirSyncTime")]
             //public object LastDirSyncTime { get; set; }
 
-            //[JsonProperty("mail")]
-            //public string Mail { get; set; }
+            [JsonProperty("mail")]
+            public string Mail { get; set; }
 
             //[JsonProperty("mailNickname")]
             //public string MailNickname { get; set; }

@@ -59,7 +59,37 @@ namespace BravoBooking
             //var meData = await client.GetStringAsync("https://graph.microsoft.com/beta/me");
             //var userData = JsonConvert.DeserializeObject<UserModel>(meData);
             //this.DisplayName.Text = userData.DisplayName;
+
+            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", App.AuthenticationResult.AccessToken);
+            var romData = await client.GetStringAsync("https://graph.microsoft.com/v1.0/me/events");
+            var dat = JsonConvert.DeserializeObject<CalendarModel>(romData);
+            var events = from Event in dat.value
+                         select Event;
+            CalendarModel.value2[] b = events.ToArray();
+            string[] s=new string[b.Length];
+            int j = 0;
+            for (int i = 0; i < b.Length; i++)
+            {
+                if ('M' == b[i].Attendees.name[0])
+                {
+                    s[j] = b[i].subject + "     " + b[i].Start.DateTime;
+                    j++;
+                }
+
+            }
+            if (j==0)
+            {
+                string[] ingen = { "Du har ingen kommende møter" };
+                this.RoomList.ItemsSource = ingen;
+            }
+            else
+            {
+                this.RoomList.ItemsSource = s;
+            }
             
-        }*/
+
+
+        }
     }
 }
