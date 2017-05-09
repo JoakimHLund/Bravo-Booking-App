@@ -178,5 +178,13 @@ C:\Users\Joakim\Desktop\O365Unified-master\BravoBooking\BravoBooking\bin\Debug\z
 C:\Users\Joakim\Desktop\O365Unified-master\BravoBooking\BravoBooking\bin\Debug\zh-Hant\Microsoft.Spatial.resources.dll
 C:\Users\Joakim\Desktop\O365Unified-master\BravoBooking\BravoBooking\obj\Debug\ADALForForms.dll.mdb
 C:\Users\Joakim\Desktop\O365Unified-master\BravoBooking\BravoBooking\bin\Debug\ADALForForms.dll.mdb
-C:\Users\Joakim\Desktop\O365Unified-master\BravoBooking\BravoBooking\obj\Debug\ADALForForms.dll.mdb
-C:\Users\Joakim\Desktop\O365Unified-master\BravoBooking\BravoBooking\bin\Debug\ADALForForms.dll.mdb
+C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\obj\Debug\BravoBooking.csproj.App.config
+C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\obj\Debug\BravoBooking.csprojResolveAssemblyReference.cache
+C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\obj\Debug\ADALForForms.HomePage.xaml.g.cs
+C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\obj\Debug\ADALForForms.BookNowPage.xaml.g.cs
+C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\obj\Debug\ADALForForms.ProfilePage.xaml.g.cs
+C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\obj\Debug\ADALForForms.CalendarPage.xaml.g.cs
+C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\obj\Debug\ADALForForms.RoomPage.xaml.g.cs
+C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\obj\Debug\ADALForForms.RoomInfoPage.xaml.g.cs
+C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\obj\Debug\ADALForForms.dll
+C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\obj\Debug\ADALForForms.pdb
