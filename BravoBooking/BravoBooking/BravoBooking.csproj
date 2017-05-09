@@ -40,8 +40,8 @@
     </Compile>
     <Compile Include="IAuthenticator.cs" />
     <Compile Include="Model\CalendarModel.cs" />
-    <Compile Include="Model\FilesModel.cs" />
     <Compile Include="Model\RomModel.cs" />
+    <Compile Include="Model\SendModel.cs" />
     <Compile Include="Model\UserModel.cs" />
     <Compile Include="Calendar.xaml.cs">
       <DependentUpon>Calendar.xaml</DependentUpon>
