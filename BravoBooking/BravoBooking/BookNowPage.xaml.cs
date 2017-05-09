@@ -70,7 +70,7 @@ namespace BravoBooking
         {
 
            
-            string text = MainEntry.Text;
+            //string text = MainEntry.Text;
             string antalls=NumberOfPersonsPicker.Items[Math.Max(0,NumberOfPersonsPicker.SelectedIndex)];
             int startint = Math.Max(0,StartTimePicker.SelectedIndex);
             string varig = DurationPicker.Items[Math.Max(0,DurationPicker.SelectedIndex)];
