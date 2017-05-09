@@ -106,22 +106,26 @@ namespace BravoBooking
             var data = JsonConvert.DeserializeObject<RomModel>(meData);
             var users = from user in data.value
                         select user;
-            RomModel.value2[] filter = users.ToArray();
-            for (int i = 0; i < filter.Length; i++)
+            List <RomModel.value2> filter = users.ToList<RomModel.value2>();
+            
+            for (int i = 0; i <filter.Count-1 ; i++)
             {
                 char c = filter[i].DisplayName[filter[i].DisplayName.Length - 1];
-                if (Char.IsNumber(c))
+                if (!(Char.IsNumber(c)))
                 {
-                   // a
+                    //a[count] = filter[i];
+                    filter.RemoveAt(i);
+                    i--;
+                    
                 }
             }
-            RomModel.value2[] a = users.ToArray();
+            RomModel.value2[] a = filter.ToArray();
             bool done = false;
 
-            for (int i = 0; i < 1; i++)
+            for (int i = 0; i < a.Length-1; i++)
             {
-                char one = a[i].DisplayName[a[i].DisplayName.Length - 1];
-                char two = a[i].DisplayName[a[i].DisplayName.Length - 2];
+                char two = a[i].DisplayName[a[i].DisplayName.Length - 1];
+                char one = a[i].DisplayName[a[i].DisplayName.Length - 2];
 
                 string s = one+""+two;
                 //<TODO: Kode å filtrere etter antall personer>
@@ -145,7 +149,7 @@ namespace BravoBooking
                         if ((starten > date && starten < end) || (slutten > date && slutten < end))
                         {
                             free = false;
-                            j = b.Length;
+                            break;
                         }
                     }
                     if (free)
