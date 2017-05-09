@@ -33,9 +33,9 @@ namespace BravoBooking
             await DisplayAlert("Token", userName, "Ok", "Cancel");
         
             var tabbedPage = new TabbedPage() { Title = "Bravo Booking"};
-            tabbedPage.Children.Add(new MePage() {Title = "Book NÅ"});
-            tabbedPage.Children.Add(new RomTid() { Title = "Rom og tid" });
-            tabbedPage.Children.Add(new Profil() { Title = "Min profil", Icon = "settings.png"});
+            tabbedPage.Children.Add(new BookNowPage() {Title = "Book NÅ"});
+            tabbedPage.Children.Add(new RoomPage() { Title = "Rom" });
+            tabbedPage.Children.Add(new ProfilePage() { Title = "Min profil"});
             await Navigation.PushAsync(tabbedPage);
         }
     }

@@ -15,9 +15,9 @@ using Xamarin.Forms.Xaml;
 namespace BravoBooking
 {
     //[XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Profil : ContentPage
+    public partial class ProfilePage : ContentPage
     {
-        public Profil()
+        public ProfilePage()
         {
             InitializeComponent();
             Appearing += ProfilAppearing;

@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace BravoBooking
 {
     //[XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Calendar : ContentPage
+    public partial class CalendarPage : ContentPage
     {
-        public Calendar()
+        public CalendarPage()
         {
             InitializeComponent();
 
