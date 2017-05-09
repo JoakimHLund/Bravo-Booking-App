@@ -65,22 +65,22 @@ namespace ADALForForms.Model
             {
                 public atendee(string em, string name)
                 {
-                     email=new emailAdress();
-                     email.adress = em;
+                     email=new emailAddress();
+                     email.address = em;
                      email.name = name;
                      type = "required";
                 }
 
-                [JsonProperty("emailAdress")]
-                public emailAdress email { get; set; }
+                [JsonProperty("emailAddress")]
+                public emailAddress email { get; set; }
 
                 [JsonProperty("type")]
                 public string type { get; set; }
 
-                public class emailAdress
+                public class emailAddress
                 {
-                    [JsonProperty("adress")]
-                    public string adress { get; set; }
+                    [JsonProperty("address")]
+                    public string address { get; set; }
                     [JsonProperty("name")]
                     public string name { get; set; }
                 }
