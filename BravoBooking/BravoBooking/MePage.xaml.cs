@@ -106,15 +106,26 @@ namespace BravoBooking
             var data = JsonConvert.DeserializeObject<RomModel>(meData);
             var users = from user in data.value
                         select user;
+            RomModel.value2[] filter = users.ToArray();
+            for (int i = 0; i < filter.Length; i++)
+            {
+                char c = filter[i].DisplayName[filter[i].DisplayName.Length - 1];
+                if (Char.IsNumber(c))
+                {
+                   // a
+                }
+            }
             RomModel.value2[] a = users.ToArray();
             bool done = false;
 
             for (int i = 0; i < 1; i++)
             {
                 char one = a[i].DisplayName[a[i].DisplayName.Length - 1];
-                char two= a[i].DisplayName[a[i].DisplayName.Length - 2];
+                char two = a[i].DisplayName[a[i].DisplayName.Length - 2];
+
+                string s = one+""+two;
                 //<TODO: Kode å filtrere etter antall personer>
-                if (Convert.ToInt32(a[i].DisplayName[a[i].DisplayName.Length-1]) >= Convert.ToInt32(antalls))
+                if (Convert.ToInt32(s) >= antall)
                 {
 
 
@@ -134,7 +145,7 @@ namespace BravoBooking
                         if ((starten > date && starten < end) || (slutten > date && slutten < end))
                         {
                             free = false;
-                            break;
+                            j = b.Length;
                         }
                     }
                     if (free)
@@ -191,3 +202,12 @@ namespace BravoBooking
     }
 }
 
+//"{\n  \"subject\": \"Meeting at M1 Kapasitet: 04\",\n  \"start\": {\n    \"DateTime\": \"2017-05-09T02:48:56.294\",\n    \"TimeZone\": \"UTC\"\n  },\n  \"end\": {\n    \"DateTime\": \"2017-05-09T03:48:56.294\",\n    \"TimeZone\": \"UTC\"\n  },\n  \
+
+
+
+//"attendees\": [
+//{     \"emailAdress\": {
+//              \"adress\": \"m1@gruppe37.onmicrosoft.com\",
+//               \"name\": \"M1 Kapasitet: 04\"
+//                },\n      \"type\": \"required\"\n    }\n  ]\n}"
