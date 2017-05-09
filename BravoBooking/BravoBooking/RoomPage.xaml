@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="BravoBooking.Room" BackgroundColor="#332d2d" >
+             x:Class="BravoBooking.RoomPage" BackgroundColor="#332d2d" >
 
     <ListView x:Name="RoomList" HasUnevenRows="True" ItemSelected="RoomList_OnItemSelected" >
         

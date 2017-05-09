@@ -12,9 +12,9 @@ using Xamarin.Forms;
 
 namespace BravoBooking
 {
-	public partial class MePage : ContentPage
+	public partial class BookNowPage : ContentPage
 	{
-        public MePage()
+        public BookNowPage()
         {
             InitializeComponent();
             this.Appearing += MePageAppearing;
@@ -99,7 +99,7 @@ namespace BravoBooking
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", App.AuthenticationResult.AccessToken);
             var meData = await client.GetStringAsync("https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'M')");
-            var data = JsonConvert.DeserializeObject<RomModel>(meData);
+            var data = JsonConvert.DeserializeObject<RoomModel>(meData);
             var users = from user in data.value
                         select user;
             RomModel.value2[] a = users.ToArray();

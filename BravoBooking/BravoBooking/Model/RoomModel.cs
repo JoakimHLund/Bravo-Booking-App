@@ -57,7 +57,7 @@ namespace ADALForForms.Model
     //        public string Service { get; set; }
     //    }
     //}
-    public partial class RomModel
+    public partial class RoomModel
     {
         public class value2
         {
@@ -177,7 +177,7 @@ namespace ADALForForms.Model
         }
     }
 
-    public partial class RomModel
+    public partial class RoomModel
     {
 
         [JsonProperty("@odata.context")]

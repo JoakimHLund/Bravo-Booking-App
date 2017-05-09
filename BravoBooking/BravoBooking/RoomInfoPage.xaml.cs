@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace BravoBooking
 {
     //[XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class RoomInfo : ContentPage
+    public partial class RoomInfoPage : ContentPage
     {
-        public RoomInfo()
+        public RoomInfoPage()
         {
             InitializeComponent();
 
