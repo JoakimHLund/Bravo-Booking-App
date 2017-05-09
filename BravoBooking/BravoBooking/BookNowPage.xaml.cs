@@ -32,8 +32,6 @@ namespace BravoBooking
             DurationPicker.Items.Add("3 timer");
 
             var button = new Button { Text = "Book NÅ!", TextColor = Color.FromHex("#77d065"), FontSize = 20};
-            
-            
         }
 
         private async void MePageAppearing(object sender, EventArgs e)
@@ -44,55 +42,37 @@ namespace BravoBooking
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", App.AuthenticationResult.AccessToken);
             var meData = await client.GetStringAsync("https://graph.microsoft.com/v1.0/me");
             var userData = JsonConvert.DeserializeObject<UserModel>(meData);
-            
         }
-
 
         private void AntallPersoner_OnSelectedIndexChanged(Object sender, EventArgs e)
         {
             var name = NumberOfPersonsPicker.Items[NumberOfPersonsPicker.SelectedIndex];
-            
         }
 
         private void WhenPicker_OnSelectedIndexChanged(Object sender, EventArgs e)
         {
             var name = StartTimePicker.Items[StartTimePicker.SelectedIndex];
-            
         }
 
         private void TidPicker_OnSelectedIndexChanged(Object sender, EventArgs e)
         {
             var name = DurationPicker.Items[DurationPicker.SelectedIndex];
-            
         }
 
         private async void BookNow_OnClicked(Object sender, EventArgs e)
         {
-
-           
-            //string text = MainEntry.Text;
             string antalls=NumberOfPersonsPicker.Items[Math.Max(0,NumberOfPersonsPicker.SelectedIndex)];
             int startint = Math.Max(0,StartTimePicker.SelectedIndex);
             string varig = DurationPicker.Items[Math.Max(0,DurationPicker.SelectedIndex)];
             DateTime now = DateTime.Now;
 
-
             int antall = int.Parse(antalls[0].ToString());
 
-            if (startint == 1)
-            {
-                startint = 30;
-            }
-            else if (startint == 2)
-            {
-                startint = 60;
-            }
+            if (startint == 1) {startint = 30;}
+            else if (startint == 2){startint = 60;}
             
             DateTime date=now.AddMinutes((double)startint);
-
             DateTime end = date.AddHours(Double.Parse(varig[0].ToString()));;
-            
-            
 
             var client = new HttpClient();
 
