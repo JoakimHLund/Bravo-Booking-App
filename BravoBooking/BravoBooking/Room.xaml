@@ -1,22 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="BravoBooking.Room" BackgroundColor="White">
+             x:Class="BravoBooking.Room" BackgroundColor="#332d2d" >
 
-    <ListView x:Name="RoomList" HasUnevenRows="True">
-      <!--<ListView.ItemTemplate>
-        <DataTemplate>
-                <ViewCell>
-                    <StackLayout Orientation="Vertical">
-                        <Grid BackgroundColor="White" HeightRequest="10">
-                        <StackLayout Orientation="Vertical" Padding="20" BackgroundColor="Red">
-                                <Label x:Name="label1" Text="{Binding Name}" Font="Large"/>
-                                <Label x:Name="label2" Text="{Binding Capacity}" Font="Bold" Opacity="0.6"/>
-                            </StackLayout>
-                    </Grid>
-                    </StackLayout>
-                </ViewCell>
-            </DataTemplate>
-        </ListView.ItemTemplate>-->
+    <ListView x:Name="RoomList" HasUnevenRows="True" ItemSelected="RoomList_OnItemSelected" >
+        
     </ListView>
 </ContentPage>

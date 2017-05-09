@@ -20,21 +20,25 @@ namespace BravoBooking {
         private Image img1;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private Image img;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private Image img2;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private Label MinProfil;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private ListView RoomList;
-        
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private Image img;
+        private ListView listView;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(Profil));
             img1 = this.FindByName<Image>("img1");
-            MinProfil = this.FindByName<Label>("MinProfil");
-            RoomList = this.FindByName<ListView>("RoomList");
             img = this.FindByName<Image>("img");
+            img2 = this.FindByName<Image>("img2");
+            MinProfil = this.FindByName<Label>("MinProfil");
+            listView = this.FindByName<ListView>("listView");
         }
     }
 }

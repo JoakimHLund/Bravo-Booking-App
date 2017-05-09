@@ -117,8 +117,6 @@ C:\Users\synne\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking.Droid\ob
 C:\Users\synne\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking.Droid\bin\Debug\System.Runtime.Serialization.Primitives.dll.mdb
 C:\Users\synne\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking.Droid\obj\Debug\res\drawable\settings.png
 C:\Users\synne\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking.Droid\obj\Debug\res\drawable\avatar.png
-C:\Users\synne\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking.Droid\obj\Debug\res\drawable\avatar1.png
-C:\Users\synne\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking.Droid\obj\Debug\ADALForForms.Droid.dll.mdb
 C:\Users\Joakim\Desktop\O365Unified-master\BravoBooking\BravoBooking.Droid\obj\Debug\ADALForForms.Droid.dll
 C:\Users\Joakim\Desktop\O365Unified-master\BravoBooking\BravoBooking.Droid\obj\Debug\ADALForForms.Droid.pdb
 C:\Users\Joakim\Desktop\O365Unified-master\BravoBooking\BravoBooking.Droid\bin\Debug\ADALForForms.Droid.dll.config
@@ -181,4 +179,6 @@ C:\Users\Joakim\Desktop\O365Unified-master\BravoBooking\BravoBooking.Droid\obj\D
 C:\Users\Joakim\Desktop\O365Unified-master\BravoBooking\BravoBooking.Droid\obj\Debug\android\assets\System.Xml.dll.mdb
 C:\Users\Joakim\Desktop\O365Unified-master\BravoBooking\BravoBooking.Droid\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
 C:\Users\Joakim\Desktop\O365Unified-master\BravoBooking\BravoBooking.Droid\obj\Debug\ADALForForms.Droid.dll.mdb
-C:\Users\Joakim\Desktop\O365Unified-master\BravoBooking\BravoBooking.Droid\bin\Debug\ADALForForms.Droid.dll.mdb
+C:\Users\synne\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking.Droid\obj\Debug\res\drawable\logout.png
+C:\Users\synne\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking.Droid\obj\Debug\ADALForForms.Droid.dll.mdb
+C:\Users\synne\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking.Droid\bin\Debug\ADALForForms.Droid.dll.mdb

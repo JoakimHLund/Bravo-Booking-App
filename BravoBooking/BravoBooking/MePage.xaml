@@ -1,18 +1,18 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="BravoBooking.MePage">
-    <StackLayout Padding="20" Spacing="10" BackgroundColor="White" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-        <Label x:Name="Velkommen" TextColor="#be1d62" Text="Book et rom NÅ!" FontSize="40"/>
-        <Label x:Name="NumberOfPersons" TextColor="#be1d62" FontSize = "20" Text="Velg antall personer:" />
-        <Picker x:Name="NumberOfPersonsPicker" Title="4 personer" HorizontalOptions="FillAndExpand" SelectedIndexChanged="AntallPersoner_OnSelectedIndexChanged" 
+    <StackLayout Padding="20" Spacing="10" BackgroundColor="#332d2d" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+
+        <Label x:Name="NumberOfPersons" TextColor="#ff8300" FontSize = "20" Text="Velg antall personer:" />
+        <Picker x:Name="NumberOfPersonsPicker" Title="4 personer" HorizontalOptions="FillAndExpand" SelectedIndexChanged="AntallPersoner_OnSelectedIndexChanged"
                 />
-        <Label x:Name="StarttTime" TextColor="#be1d62" FontSize = "20" Text="Velg starttidspunkt:" />
+        <Label x:Name="StarttTime" TextColor="#ff8300" FontSize = "20" Text="Velg starttidspunkt:" />
         <Picker x:Name="StartTimePicker" Title="Akkurat nå" HorizontalOptions="FillAndExpand" SelectedIndexChanged="WhenPicker_OnSelectedIndexChanged"
                 />
-        <Label x:Name="Duration" TextColor="#be1d62" FontSize = "20" Text="Velg varighet:" />
+            <Label x:Name="Duration" TextColor="#ff8300" FontSize = "20" Text="Velg varighet:" />
         <Picker x:Name="DurationPicker" Title="1 time" HorizontalOptions="FillAndExpand" SelectedIndexChanged="TidPicker_OnSelectedIndexChanged"
                 />
-        <Button x:Name="BookNow" BackgroundColor="#be1d62" Clicked="BookNow_OnClicked" TextColor ="White" FontSize ="20" Text="Book NÅ!" />
-        <Label x:Name="MainLabel" TextColor="#be1d62" FontSize = "20" />
+        <Button x:Name="BookNow" BackgroundColor="#ff8300" Clicked="BookNow_OnClicked" TextColor ="White" FontSize ="20" Text="Book NÅ!" />
+        <Label x:Name="MainLabel" TextColor="#ff8300" FontSize = "20" />
         <Entry x:Name="MainEntry"/>
     
     </StackLayout>

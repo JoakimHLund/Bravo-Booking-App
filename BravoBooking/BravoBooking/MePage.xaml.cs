@@ -33,6 +33,7 @@ namespace BravoBooking
 
             var button = new Button { Text = "Book NÅ!", TextColor = Color.FromHex("#77d065"), FontSize = 20};
             
+            
         }
 
         private async void MePageAppearing(object sender, EventArgs e)
@@ -43,31 +44,26 @@ namespace BravoBooking
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", App.AuthenticationResult.AccessToken);
             var meData = await client.GetStringAsync("https://graph.microsoft.com/v1.0/me");
             var userData = JsonConvert.DeserializeObject<UserModel>(meData);
-            //this.DisplayName.Text = userData.DisplayName;
-            //this.Mail.Text = userData.Mail;
-            //this.Country.Text = userData.Country;
+            
         }
 
 
         private void AntallPersoner_OnSelectedIndexChanged(Object sender, EventArgs e)
         {
             var name = NumberOfPersonsPicker.Items[NumberOfPersonsPicker.SelectedIndex];
-
-            //DisplayAlert(name, "Selected value", "OK");
+            
         }
 
         private void WhenPicker_OnSelectedIndexChanged(Object sender, EventArgs e)
         {
             var name = StartTimePicker.Items[StartTimePicker.SelectedIndex];
-
-            //DisplayAlert(name, "Selected value", "OK");
+            
         }
 
         private void TidPicker_OnSelectedIndexChanged(Object sender, EventArgs e)
         {
             var name = DurationPicker.Items[DurationPicker.SelectedIndex];
-
-            //DisplayAlert(name, "Selected value", "OK");
+            
         }
 
         private async void BookNow_OnClicked(Object sender, EventArgs e)
@@ -177,6 +173,8 @@ namespace BravoBooking
                 MainLabel.Text = "Det er desverre ingen ledige rom som passer dine kriterier.";
             }
         }
+
+        
 
 
     }

@@ -16,7 +16,7 @@ namespace BravoBooking
 
         public Room()
         {
-            InitializeComponent ();
+            InitializeComponent();
             Appearing += RoomPageAppearing;
 
         }
@@ -40,20 +40,31 @@ namespace BravoBooking
                 id[i] = a[i].Id;
             }
             this.RoomList.ItemsSource = navn;
-            
 
             
         }
-        public void selected(RomModel.value2[] a) {
-            string s=(string)RoomList.SelectedItem;
-            for(int i = 0; i < a.Length; i++)
+        public void selected(RomModel.value2[] a)
+        {
+            string s = (string)RoomList.SelectedItem;
+            for (int i = 0; i < a.Length; i++)
             {
                 if (a[i].DisplayName == s)
                 {
                     string id = a[i].Id;
                 }
             }
-           
+        }
+
+        private async void RoomList_OnItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            if (e.SelectedItem != null)
+            {
+                var selection = e.SelectedItem as string;
+                //DisplayAlert("Du har valgt et rom", selection, "OK");
+                var roomInfo = new RoomInfo() { Title = "Bravo Booking" };
+                //roomInfo(new RoomInfo() { Title = "Book NÅ" });
+                await Navigation.PushAsync(roomInfo);
+            }
         }
     }
 }

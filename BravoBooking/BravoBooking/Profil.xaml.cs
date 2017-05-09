@@ -28,13 +28,13 @@ namespace BravoBooking
             //Associating tap events to the image buttons  
             img.GestureRecognizers.Add(tapImage);
             img1.GestureRecognizers.Add(tapImage);
+            img2.GestureRecognizers.Add(tapImage);
 
             string userName = App.AuthenticationResult.UserInfo.GivenName + " " + App.AuthenticationResult.UserInfo.FamilyName;
             MinProfil.Text = "Du er logget inn som: " + userName;
         }
-
-
-        void tapImage_Tapped(object sender, EventArgs e)
+        
+        private async void tapImage_Tapped(object sender, EventArgs e)
         {
             // handle the tap  
             DisplayAlert("Alert", "Innstillinger", "OK");
