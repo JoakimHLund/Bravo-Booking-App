@@ -3,5 +3,6 @@
   <PropertyGroup>
     <SelectedDevice>AndroidE</SelectedDevice>
     <DefaultDevice>AndroidE</DefaultDevice>
+    <ProjectView>ProjectFiles</ProjectView>
   </PropertyGroup>
 </Project>
