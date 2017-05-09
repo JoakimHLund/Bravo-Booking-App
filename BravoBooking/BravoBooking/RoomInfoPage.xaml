@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BravoBooking.RoomInfoPage">
+    <StackLayout BackgroundColor="#332d2d">
+        <Label x:Name="RomInfo" Text="Rominformasjon:" TextColor="#ff8300"/>
+        <Label x:Name="RomInfo2" Text="Se kalenderen for valgt rom" TextColor="#ff8300"/>
+
+    </StackLayout>
+</ContentPage>
