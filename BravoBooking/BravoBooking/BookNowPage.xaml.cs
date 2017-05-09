@@ -102,7 +102,7 @@ namespace BravoBooking
             var data = JsonConvert.DeserializeObject<RoomModel>(meData);
             var users = from user in data.value
                         select user;
-            RomModel.value2[] a = users.ToArray();
+            RoomModel.value2[] a = users.ToArray();
             bool done = false;
 
             for(int i=0; i<1;i++)

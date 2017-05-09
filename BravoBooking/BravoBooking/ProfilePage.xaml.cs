@@ -66,11 +66,11 @@ namespace BravoBooking
             if (j==0)
             {
                 string[] ingen = { "Du har ingen kommende møter" };
-                this.RoomList.ItemsSource = ingen;
+                this.MeetingList.ItemsSource = ingen;
             }
             else
             {
-                this.RoomList.ItemsSource = s;
+                this.MeetingList.ItemsSource = s;
             }
             
 
