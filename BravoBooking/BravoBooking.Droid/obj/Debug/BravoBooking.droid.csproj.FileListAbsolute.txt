@@ -181,4 +181,5 @@ C:\Users\Joakim\Desktop\O365Unified-master\BravoBooking\BravoBooking.Droid\obj\D
 C:\Users\Joakim\Desktop\O365Unified-master\BravoBooking\BravoBooking.Droid\obj\Debug\ADALForForms.Droid.dll.mdb
 C:\Users\synne\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking.Droid\obj\Debug\res\drawable\logout.png
 C:\Users\synne\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking.Droid\obj\Debug\ADALForForms.Droid.dll.mdb
-C:\Users\synne\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking.Droid\bin\Debug\ADALForForms.Droid.dll.mdb
+C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking.Droid\obj\Debug\ADALForForms.Droid.dll
+C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking.Droid\obj\Debug\ADALForForms.Droid.pdb
