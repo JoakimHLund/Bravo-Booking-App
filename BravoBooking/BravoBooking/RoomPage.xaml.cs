@@ -30,7 +30,24 @@ namespace BravoBooking
             var data = JsonConvert.DeserializeObject<RoomModel>(meData);
             var users = from user in data.value
                         select user;
-            RoomModel.value2[] a = users.ToArray();
+
+
+            List<RoomModel.value2> filter = users.ToList<RoomModel.value2>();
+
+            for (int i = 0; i < filter.Count - 1; i++)
+            {
+                char c = filter[i].DisplayName[filter[i].DisplayName.Length - 1];
+                if (!(Char.IsNumber(c)))
+                {
+                    //a[count] = filter[i];
+                    filter.RemoveAt(i);
+                    i--;
+
+                }
+            }
+            RoomModel.value2[] a = filter.ToArray();
+
+
             //string[] navn = new string[a.Length];
             Label[] elementer = new Label[a.Length];
             string[] id = new string[a.Length];
@@ -55,7 +72,11 @@ namespace BravoBooking
                         break;
                     }
                 }
-                elementer[i].Text = a[i].DisplayName;
+                elementer[i] = new Label{
+                    Text = a[i].DisplayName,
+
+                };
+                //elementer[i].Text = a[i].DisplayName;
                 id[i] = a[i].Id;
 
                 if (free)
