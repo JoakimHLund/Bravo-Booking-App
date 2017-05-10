@@ -18,7 +18,6 @@ namespace BravoBooking
         {
             InitializeComponent();
             Appearing += RoomPageAppearing;
-
         }
 
         private async void RoomPageAppearing(object sender, EventArgs e)
@@ -32,16 +31,39 @@ namespace BravoBooking
             var users = from user in data.value
                         select user;
             RoomModel.value2[] a = users.ToArray();
-            string[] navn = new string[a.Length];
+            //string[] navn = new string[a.Length];
+            Label[] elementer = new Label[a.Length];
             string[] id = new string[a.Length];
             for (int i = 0; i < a.Length; i++)
             {
-                navn[i] = a[i].DisplayName;
-                id[i] = a[i].Id;
-            }
-            this.RoomList.ItemsSource = navn;
+                DateTime now = DateTime.Now;
+                bool free = true;
+                var romData = await client.GetStringAsync("https://graph.microsoft.com/v1.0/users/" + a[i].Id + "/events?$select=subject,start,end");
+                var dat = JsonConvert.DeserializeObject<CalendarModel>(romData);
+                var events = from Event in dat.value
+                             select Event;
+                CalendarModel.value2[] b = events.ToArray();
 
-            
+                for (int j = 0; j < b.Length; j++)
+                {
+
+                    DateTime starten = Convert.ToDateTime(b[j].Start.DateTime);
+                    DateTime slutten = Convert.ToDateTime(b[j].End.DateTime);
+                    if (starten < now && slutten > now)
+                    {
+                        free = false;
+                        break;
+                    }
+                }
+                elementer[i].Text = a[i].DisplayName;
+                id[i] = a[i].Id;
+
+                if (free)
+                    elementer[i].BackgroundColor = Color.Green;
+                else
+                    elementer[i].BackgroundColor = Color.Red;
+            }
+            this.RoomList.ItemsSource = elementer;
         }
         public void selected(RoomModel.value2[] a)
         {
