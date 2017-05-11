@@ -4,6 +4,8 @@
              x:Class="BravoBooking.RoomPage" BackgroundColor="#332d2d" >
 
     <ListView x:Name="RoomList" HasUnevenRows="True" ItemSelected="RoomList_OnItemSelected" >
-        
+      <DataTemplate>
+        <TextCell Text="{Binding DisplayName}" />
+      </DataTemplate>
     </ListView>
 </ContentPage>

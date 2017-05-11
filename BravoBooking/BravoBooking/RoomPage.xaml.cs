@@ -49,7 +49,8 @@ namespace BravoBooking
 
 
             //string[] navn = new string[a.Length];
-            Label[] elementer = new Label[a.Length];
+            List<String> elementer = new List<string>();
+            
             string[] id = new string[a.Length];
             for (int i = 0; i < a.Length; i++)
             {
@@ -72,19 +73,18 @@ namespace BravoBooking
                         break;
                     }
                 }
-                elementer[i] = new Label{
-                    Text = a[i].DisplayName,
-
-                };
-                //elementer[i].Text = a[i].DisplayName;
-                id[i] = a[i].Id;
+                elementer.Add(a[i].DisplayName);
+               
+                
+                //id[i] = a[i].Id;
 
                 if (free)
-                    elementer[i].BackgroundColor = Color.Green;
+                    elementer[i]="Ledig nå: "+elementer[i];
                 else
-                    elementer[i].BackgroundColor = Color.Red;
+                    elementer[i] = "Ikke ledig nå: " + elementer[i];
             }
             this.RoomList.ItemsSource = elementer;
+           
         }
         public void selected(RoomModel.value2[] a)
         {
@@ -107,6 +107,7 @@ namespace BravoBooking
                 var roomInfo = new RoomInfoPage() { Title = "Bravo Booking" };
                 //roomInfo(new RoomInfoPage() { Title = "Book NÅ" });
                 await Navigation.PushAsync(roomInfo);
+
             }
         }
     }

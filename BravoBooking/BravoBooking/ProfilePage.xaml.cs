@@ -66,7 +66,8 @@ namespace BravoBooking
                 {
                     if ('M' == b[i].Attendees[j].email.name[0])
                     {
-                        s[j] = b[i].subject + "     " + b[i].Start.DateTime;
+                        DateTime d = Convert.ToDateTime(b[i].Start.DateTime);
+                        s[j] = b[i].subject + "     " + d.ToString("dd MMMM yyyy HH: mm");
                         count++;
                     }
                 }
