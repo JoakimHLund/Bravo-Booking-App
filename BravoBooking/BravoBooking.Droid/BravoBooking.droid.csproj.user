@@ -3,6 +3,6 @@
   <PropertyGroup>
     <SelectedDevice>HelloAndroid</SelectedDevice>
     <DefaultDevice>HelloAndroid</DefaultDevice>
-    <ProjectView>ProjectFiles</ProjectView>
+    <ProjectView>ShowAllFiles</ProjectView>
   </PropertyGroup>
 </Project>
