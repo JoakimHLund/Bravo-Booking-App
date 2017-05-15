@@ -15,7 +15,7 @@ namespace BravoBooking
         public RoomInfoPage()
         {
             InitializeComponent();
-
+            RomInfo2.Text=RoomInfoPage.TitleProperty.ToString();
 
             //string roomName = ;
             //RomInfo.Text = "Du har valgt rom:";

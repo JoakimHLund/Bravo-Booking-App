@@ -10,66 +10,45 @@ using Newtonsoft.Json;
 namespace ADALForForms.Model
 {
 
-    //public partial class RomModel
-    //{
-    //    public class AssignedLicens
-    //    {
-
-    //        [JsonProperty("disabledPlans")]
-    //        public object[] DisabledPlans { get; set; }
-
-    //        [JsonProperty("skuId")]
-    //        public string SkuId { get; set; }
-    //    }
-    //}
-
-    //public partial class RomModel
-    //{
-    //    public class AssignedPlan
-    //    {
-
-    //        [JsonProperty("assignedTimestamp")]
-    //        public string AssignedTimestamp { get; set; }
-
-    //        [JsonProperty("capabilityStatus")]
-    //        public string CapabilityStatus { get; set; }
-
-    //        [JsonProperty("service")]
-    //        public string Service { get; set; }
-
-    //        [JsonProperty("servicePlanId")]
-    //        public string ServicePlanId { get; set; }
-    //    }
-    //}
-
-    //public partial class RomModel
-    //{
-    //    public class ProvisionedPlan
-    //    {
-
-    //        [JsonProperty("capabilityStatus")]
-    //        public string CapabilityStatus { get; set; }
-
-    //        [JsonProperty("provisioningStatus")]
-    //        public string ProvisioningStatus { get; set; }
-
-    //        [JsonProperty("service")]
-    //        public string Service { get; set; }
-    //    }
-    //}
-    public partial class Calendar
+    public partial class CalendarModel
     {
         public class value2
         {
-            //[JsonProperty("@odata.context")]
-            //public string OdataContext { get; set; }
+
+            public value2(string su, string st, string en, string em, string name)
+            {
+                subject = su;
+                Start = new start();
+                Start.DateTime = st;
+                Start.TimeZone = "UTC";
+                End = new end();
+                End.DateTime = en;
+                End.TimeZone = "UTC";
+                Attendees = new atendee();
+                Attendees.adress = em;
+                Attendees.name = name;
+
+
+            }
+            [JsonProperty("@odata.context")]
+            public string OdataContext { get; set; }
+
+            [JsonProperty("subject")]
+            public string subject { get; set; }
 
             //[JsonProperty("objectType")]
             //public string ObjectType { get; set; }
 
-            [JsonProperty("Id")]
-            public string Id { get; set; }
-            
+            //[JsonProperty("Id")]
+            //public string Id { get; set; }
+            [JsonProperty("start")]
+            public start Start { get; set; }
+
+            [JsonProperty("end")]
+            public end End { get; set; }
+            [JsonProperty("attendees")]
+            public atendee Attendees { get; set; }
+
             public class start
             {
                 [JsonProperty("DateTime")]
@@ -84,11 +63,20 @@ namespace ADALForForms.Model
                 [JsonProperty("TimeZone")]
                 public string TimeZone { get; set; }
             }
+            public class atendee
+            {
+                [JsonProperty("adress")]
+                 public string adress { get; set; }
+                [JsonProperty("name")]
+                 public string name { get; set; }
+                
+                
+            }
         }
         
     }
 
-    public partial class Calendar
+    public partial class CalendarModel
     {
 
         [JsonProperty("@odata.context")]
