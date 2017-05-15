@@ -109,16 +109,19 @@
     <AndroidResource Include="Resources\drawable\settings.png" />
     <AndroidResource Include="Resources\drawable\icon-old.png" />
     <AndroidResource Include="Resources\drawable\B-Pink.png" />
-    <AndroidResource Include="Resources\drawable\BB1.png" />
     <AndroidResource Include="Resources\drawable\ic_launcher.png" />
     <AndroidResource Include="Resources\drawable-hdpi\icon-old.png" />
     <AndroidResource Include="Resources\drawable-hdpi\B-Pink.png" />
-    <AndroidResource Include="Resources\drawable-hdpi\BB1.png" />
     <AndroidResource Include="Resources\drawable-hdpi\ic_launcher.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\icon-old.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\B-Pink.png" />
-    <AndroidResource Include="Resources\drawable-xxhdpi\BB1.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\B-Orange.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\B-Pink.png" />
+    <AndroidResource Include="Resources\drawable\B-Orange.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\B-Orange.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\B-Orange.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BravoBooking\BravoBooking.csproj">
