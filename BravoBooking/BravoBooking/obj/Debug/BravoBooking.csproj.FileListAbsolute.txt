@@ -114,7 +114,6 @@ C:\Users\synne\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\obj\Debu
 C:\Users\synne\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\obj\Debug\ADALForForms.HomePage.xaml.g.cs
 C:\Users\synne\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\obj\Debug\ADALForForms.dll
 C:\Users\synne\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\obj\Debug\ADALForForms.pdb
-C:\Users\synne\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\obj\Debug\ADALForForms.RomTid.xaml.g.cs
 C:\Users\Joakim\Desktop\O365Unified-master\BravoBooking\BravoBooking\obj\Debug\BravoBooking.csproj.App.config
 C:\Users\Joakim\Desktop\O365Unified-master\BravoBooking\BravoBooking\obj\Debug\BravoBooking.csprojResolveAssemblyReference.cache
 C:\Users\Joakim\Desktop\O365Unified-master\BravoBooking\BravoBooking\obj\Debug\ADALForForms.HomePage.xaml.g.cs
@@ -239,3 +238,14 @@ C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\bin\D
 C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\bin\Debug\zh-Hans\Microsoft.Spatial.resources.dll
 C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\bin\Debug\zh-Hant\Microsoft.Spatial.resources.dll
 C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\bin\Debug\ADALForForms.pdb
+C:\Users\synne\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\obj\Debug\ADALForForms.BookNowPage.xaml.g.cs
+C:\Users\synne\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\obj\Debug\ADALForForms.ProfilePage.xaml.g.cs
+C:\Users\synne\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\obj\Debug\ADALForForms.CalendarPage.xaml.g.cs
+C:\Users\synne\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\obj\Debug\ADALForForms.RoomPage.xaml.g.cs
+C:\Users\synne\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\obj\Debug\ADALForForms.RoomInfoPage.xaml.g.cs
+C:\Users\synne\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\obj\Debug\ADALForForms.dll.mdb
+C:\Users\synne\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\bin\Debug\ADALForForms.dll.mdb
+C:\Users\synne\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\obj\Debug\ADALForForms.dll.mdb
+C:\Users\synne\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\bin\Debug\ADALForForms.dll.mdb
+C:\Users\synne\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\obj\Debug\ADALForForms.dll.mdb
+C:\Users\synne\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\bin\Debug\ADALForForms.dll.mdb
