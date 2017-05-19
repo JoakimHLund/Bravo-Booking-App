@@ -245,7 +245,3 @@ C:\Users\synne\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\obj\Debu
 C:\Users\synne\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\obj\Debug\ADALForForms.RoomInfoPage.xaml.g.cs
 C:\Users\synne\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\obj\Debug\ADALForForms.dll.mdb
 C:\Users\synne\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\bin\Debug\ADALForForms.dll.mdb
-C:\Users\synne\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\obj\Debug\ADALForForms.dll.mdb
-C:\Users\synne\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\bin\Debug\ADALForForms.dll.mdb
-C:\Users\synne\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\obj\Debug\ADALForForms.dll.mdb
-C:\Users\synne\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking\bin\Debug\ADALForForms.dll.mdb
