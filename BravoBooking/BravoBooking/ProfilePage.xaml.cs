@@ -72,7 +72,7 @@ namespace BravoBooking
                             DateTime d = Convert.ToDateTime(b[i].Start.DateTime);
                             if (d > DateTime.Now)
                             {
-                                s[j] = b[i].subject + "     " + d.ToString("dd MMMM yyyy HH: mm");
+                                s[j] = b[i].subject + "     " + d.ToString("dd MM yyyy HH:mm");
                                 count++;
                             }
                         }
