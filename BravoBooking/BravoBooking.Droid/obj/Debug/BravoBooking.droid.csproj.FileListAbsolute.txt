@@ -253,8 +253,6 @@ C:\Users\Joakim\Desktop\O365Unified-master\BravoBooking\BravoBooking.Droid\obj\D
 C:\Users\Joakim\Desktop\O365Unified-master\BravoBooking\BravoBooking.Droid\obj\Debug\res\drawable-xhdpi\ic_launcher.png
 C:\Users\Joakim\Desktop\O365Unified-master\BravoBooking\BravoBooking.Droid\obj\Debug\res\drawable-xhdpi\b-pink.png
 C:\Users\Joakim\Desktop\O365Unified-master\BravoBooking\BravoBooking.Droid\obj\Debug\res\drawable-xxxhdpi\icon.png
-C:\Users\Joakim\Desktop\O365Unified-master\BravoBooking\BravoBooking.Droid\bin\Debug\ADALForForms.dll.config
-C:\Users\Joakim\Desktop\O365Unified-master\BravoBooking\BravoBooking.Droid\obj\Debug\ADALForForms.Droid.dll.mdb
 C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking.Droid\obj\Debug\res\drawable\icon-old.png
 C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking.Droid\obj\Debug\res\drawable\b-pink.png
 C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking.Droid\obj\Debug\res\drawable\ic_launcher.png
@@ -266,3 +264,5 @@ C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking.Droid
 C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking.Droid\obj\Debug\res\drawable-xxhdpi\ic_launcher.png
 C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking.Droid\obj\Debug\res\drawable-xhdpi\ic_launcher.png
 C:\Users\Johannes\Source\Repos\Bravo-Booking-App\BravoBooking\BravoBooking.Droid\obj\Debug\res\drawable-xhdpi\b-pink.png
+C:\Users\Joakim\Desktop\O365Unified-master\BravoBooking\BravoBooking.Droid\obj\Debug\ADALForForms.Droid.dll.mdb
+C:\Users\Joakim\Desktop\O365Unified-master\BravoBooking\BravoBooking.Droid\bin\Debug\ADALForForms.Droid.dll.mdb
