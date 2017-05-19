@@ -156,7 +156,7 @@ namespace BravoBooking
                     {
                         //<TODO: Sette Opp møte mellom (now) og (end) på møterom b[i]>
 
-                        SendModel.value2 meeting = new SendModel.value2("Meeting at " + a[i].DisplayName, date.ToString("yyyy-MM-ddTHH:mm:ss.fff"), end.ToString("yyyy-MM-ddTHH:mm:ss.fff"), a[i].Mail, a[i].DisplayName);
+                        SendModel.value2 meeting = new SendModel.value2("Møte på " + a[i].DisplayName, date.ToString("yyyy-MM-ddTHH:mm:ss.fff"), end.ToString("yyyy-MM-ddTHH:mm:ss.fff"), a[i].Mail, a[i].DisplayName);
                         //meeting.Start.DateTime = date.ToString("MM'/'dd'/'yyyy HH':'mm':'ss.fff");
                         //meeting.End.DateTime = end.ToString();
                         //meeting.Atendee.name = a[i].DisplayName;
