@@ -117,11 +117,8 @@
     <AndroidResource Include="Resources\drawable-xxhdpi\B-Pink.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\ic_launcher.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\ic_launcher.png" />
-    <AndroidResource Include="Resources\drawable-xhdpi\B-Orange.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\B-Pink.png" />
-    <AndroidResource Include="Resources\drawable\B-Orange.png" />
-    <AndroidResource Include="Resources\drawable-xxhdpi\B-Orange.png" />
-    <AndroidResource Include="Resources\drawable-hdpi\B-Orange.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\icon.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BravoBooking\BravoBooking.csproj">

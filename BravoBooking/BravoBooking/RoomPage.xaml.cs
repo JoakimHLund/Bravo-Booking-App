@@ -104,7 +104,7 @@ namespace BravoBooking
             {
                 var selection = e.SelectedItem as string;
                 //DisplayAlert("Du har valgt et rom", selection, "OK");
-                var roomInfo = new RoomInfoPage() { Title = "Bravo Booking" };
+                var roomInfo = new RoomInfoPage(selection) { Title = "Bravo Booking" };
                 //roomInfo(new RoomInfoPage() { Title = "Book NÅ" });
                 await Navigation.PushAsync(roomInfo);
 

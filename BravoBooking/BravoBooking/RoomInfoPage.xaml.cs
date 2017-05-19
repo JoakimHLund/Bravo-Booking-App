@@ -12,11 +12,17 @@ namespace BravoBooking
     //[XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class RoomInfoPage : ContentPage
     {
-        public RoomInfoPage()
+        public RoomInfoPage(string s)
         {
             InitializeComponent();
-            RomInfo2.Text=RoomInfoPage.TitleProperty.ToString();
-
+            //RomInfo2.Text=RoomInfoPage.TitleProperty.ToString();
+            string rom = s;
+            if (s[0].ToString() == "L")
+            {
+               string romnavn= s.Substring(8, 2);
+            }
+            RomInfo2.Text = rom;
+            
             //string roomName = ;
             //RomInfo.Text = "Du har valgt rom:";
         }
