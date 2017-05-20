@@ -18,8 +18,15 @@ namespace BravoBooking
             InitializeComponent();
             this.Appearing += MePageAppearing;
 
+            NumberOfPersonsPicker.Items.Add("1 personer");
+            NumberOfPersonsPicker.Items.Add("2 personer");
+            NumberOfPersonsPicker.Items.Add("3 personer");
             NumberOfPersonsPicker.Items.Add("4 personer");
+            NumberOfPersonsPicker.Items.Add("5 personer");
             NumberOfPersonsPicker.Items.Add("6 personer");
+            NumberOfPersonsPicker.Items.Add("7 personer");
+            NumberOfPersonsPicker.Items.Add("8 personer");
+            NumberOfPersonsPicker.Items.Add("9 personer");
             NumberOfPersonsPicker.Items.Add("10 personer");
 
             StartTimePicker.Items.Add("Akkurat nå");
