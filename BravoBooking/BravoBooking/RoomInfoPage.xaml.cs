@@ -18,6 +18,8 @@ namespace BravoBooking
     public partial class RoomInfoPage : ContentPage
     {
         string romnavn;
+        DateTime date;
+        DateTime time;
         public RoomInfoPage(string s)
         {
             
@@ -50,6 +52,7 @@ namespace BravoBooking
         {
             var client = new HttpClient();
 
+            time =Convert.ToDateTime(MainTimePicker.Time);
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", App.AuthenticationResult.AccessToken);
             var meData = await client.GetStringAsync("https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,"+romnavn+")");
@@ -65,7 +68,7 @@ namespace BravoBooking
             var events = from Event in dat.value
                          select Event;
             CalendarModel.value2[] b = events.ToArray();
-            DateTime now = DateTime.Now;
+            DateTime now = date.Date + time.TimeOfDay;
             DateTime end = now.AddHours(1);
             bool ledig = true;
             for (int i = 0; i < b.Length; i++)
@@ -79,6 +82,7 @@ namespace BravoBooking
 
             if (ledig)
             {
+                
                 SendModel.value2 meeting = new SendModel.value2("Meeting at " + filter[0].DisplayName, now.ToString("yyyy-MM-ddTHH:mm:ss.fff"), end.ToString("yyyy-MM-ddTHH:mm:ss.fff"),filter[0].Mail, filter[0].DisplayName);
                 
                 string json = JsonConvert.SerializeObject(meeting, Formatting.Indented);
@@ -103,6 +107,16 @@ namespace BravoBooking
             }
 
         }
+        private void DatePicker_OnDateSelected(Object sender, DateChangedEventArgs e)
+         {
+            date = e.NewDate;
+         }
+        //private void TimePicker_OnTimeSelected(Object sender, DateChangedEventArgs e)
+        //{
+        //    time = e.NewDate;
+        //}
+
+
         //metode for kalender
     }
 }

@@ -5,7 +5,11 @@
     <StackLayout BackgroundColor="#332d2d">
         <Label x:Name="RomInfo" Text="Rominformasjon:" TextColor="#ff8300"/>
         <Label x:Name="RomInfo2" Text="Se kalenderen for valgt rom" TextColor="#ff8300"/>
-      <Button x:Name="BookNow" BackgroundColor="#ff8300" Clicked="BookNow_OnClicked" TextColor ="White" FontSize ="20" Text="Book NÅ!" />
+        
+      <DatePicker x:Name="MainDatePicker" MinimumDate="5/5/2017" MaximumDate="10/8/2050" DateSelected="DatePicker_OnDateSelected"/>
+      <TimePicker x:Name="MainTimePicker"/>
+      
+      <Button x:Name="BookNow" BackgroundColor="#ff8300" Clicked="BookNow_OnClicked" TextColor ="White" FontSize ="20" Text="Book!" />
       <Label x:Name="Resultat" Text="" TextColor="#ff8300"/>
     </StackLayout>
 </ContentPage>
