@@ -20,10 +20,10 @@ namespace ADALForForms.Model
                 subject = su;
                 Start = new start();
                 Start.DateTime = st;
-                Start.TimeZone = "CEST";
+                Start.TimeZone = "UTC";
                 End = new end();
                 End.DateTime = en;
-                End.TimeZone = "CEST";
+                End.TimeZone = "UTC";
                 atendee a = new atendee(em, name);
                 Attendees = new atendee[1];
                 Attendees[0]=a;
