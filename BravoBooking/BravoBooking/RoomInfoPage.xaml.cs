@@ -28,7 +28,7 @@ namespace BravoBooking
             RomInfo2.Text=RoomInfoPage.TitleProperty.ToString();
             
             string skapasitet;
-            int en, to, kapasitet;
+            int kapasitet;
             if (s[0] == 'L')
             {
                 romnavn = s.Substring(10, 2);
