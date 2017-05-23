@@ -7,20 +7,15 @@
             <Image x:Name="img1"  Grid.Row="0" Grid.Column="0"  Grid.ColumnSpan="6" Source="avatar.png" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
             <Image x:Name="img"  Grid.Row="1" Grid.Column="0" Source="settings.png" VerticalOptions="Start" HorizontalOptions="Start"/>
             <Image x:Name="img2"  Grid.Row="1" Grid.Column="5" Source="logout.png" VerticalOptions="Start" HorizontalOptions="Start"/>
-            <Label x:Name="MinProfil" FontSize="Large" BackgroundColor="#332d2d" TextColor="#ff8300" Text="Du er logget inn som:"
+            <Label x:Name="MinProfil" FontSize="Medium" BackgroundColor="#332d2d" TextColor="#ff8300" Text="Du er logget inn som:"
                Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="6" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
-            <ListView x:Name="MeetingList" HasUnevenRows="True" Grid.Row="3"  Grid.RowSpan="3" Grid.ColumnSpan="6" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+            <ListView x:Name="MeetingList" HasUnevenRows="True" Grid.Row="3"  Grid.RowSpan="3" Grid.ColumnSpan="6" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                <ListView.Header>
+                    <StackLayout Padding="10,5,0,5" >
+                        <Label Text="Kommende Møter:" TextColor="#33acda" />
+                    </StackLayout>
+                </ListView.Header>
+            </ListView>
         </Grid>
-      
-        <!--<Button x:Name="LogOut" WidthRequest="70" HeightRequest="70" BackgroundColor="#ff8300" 
-                    Clicked="LogOut_OnClicked" TextColor ="White" FontSize ="20" Text="Logg ut" />
-                <Label x:Name="MainLabel" TextColor="#be1d62" FontSize = "20" />
-            <Entry x:Name="MainEntry"/>-->
-           
-
-
     </StackLayout>
- 
-        
-      
 </ContentPage>

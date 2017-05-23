@@ -78,9 +78,6 @@ namespace BravoBooking
 
         private async void BookNow_OnClicked(Object sender, EventArgs e)
         {
-
-
-            
             string antalls = NumberOfPersonsPicker.Items[Math.Max(0, NumberOfPersonsPicker.SelectedIndex)];
             int startint = Math.Max(0, StartTimePicker.SelectedIndex);
             string varig = DurationPicker.Items[Math.Max(0, DurationPicker.SelectedIndex)];
@@ -127,7 +124,7 @@ namespace BravoBooking
             }
             RoomModel.value2[] a = filter.ToArray();
             bool done = false;
-
+            int rn = 0; //Rom Navn
             for (int i = 0; i < a.Length - 1; i++)
             {
                 char two = a[i].DisplayName[a[i].DisplayName.Length - 1];
@@ -184,32 +181,21 @@ namespace BravoBooking
                                 MainLabel.Text = send.ToString();
                             }
                         }
-
-
-                        //var send = await client.PostAsync("https://graph.microsoft.com/v1.0/me/events", httpContent);
-
-
+                        rn = i;
                         done = true;
-
                         break;
-
                     }
                 }
-
-
-
             }
             if (done)
             {
-                MainLabel.Text = "Rommet er booket";
+                MainLabel.Text = a[rn].DisplayName + " er booket";
             }
             else
             {
                 MainLabel.Text = "Det er desverre ingen ledige rom som passer dine kriterier.";
             }
         }
-
-
     }
 }
 
